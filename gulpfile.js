@@ -2,6 +2,7 @@
 
 const gulp = require('gulp'),
     autoPrefixer = require('gulp-autoprefixer'),
+    htmlMin = require('gulp-htmlmin'),
     minifyCss = require('gulp-minify-css'),
     sass = require('gulp-sass'),
     sourceMaps = require('gulp-sourcemaps'),
@@ -11,21 +12,24 @@ const gulp = require('gulp'),
 
 const path = {
     public: {
-        css: 'public/css',
-        img: 'public/img',
-        fonts: 'public/fonts'
+        html: './public/',
+        css: './public/css',
+        img: './public/img',
+        fonts: './public/fonts'
     },
 
     src: {
-        style: 'src/scss/main.scss',
-        img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        html: './src/*.html',
+        style: './src/scss/main.scss',
+        img: './src/img/**/*.*',
+        fonts: './src/fonts/**/*.*'
     },
 
     watch: {
-        style: 'src/scss/**/*.scss',
-        img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        html: './src/*.html',
+        style: './src/scss/**/*.scss',
+        img: './src/img/**/*.*',
+        fonts: './src/fonts/**/*.*'
     },
 
     clean: './public'
@@ -39,8 +43,14 @@ const serverConfig = {
     host: 'localhost',
     port: 9000,
     logPrefix: "My_project",
-    files: [path.public.css, path.public.img, 'public/*.html']
+    files: [path.public.css, path.public.img, path.public.html]
 };
+
+gulp.task('html:build', function() {
+    return gulp.src(path.src.html)
+        .pipe(htmlMin({removeComments: true}))
+        .pipe(gulp.dest(path.public.html));
+});
 
 gulp.task('style:build', function() {
     return gulp.src(path.src.style)
@@ -71,13 +81,14 @@ gulp.task('fonts:build', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('style:build', 'image:build', 'fonts:build'));
+gulp.task('build', gulp.series('style:build', 'html:build', 'image:build', 'fonts:build'));
 
 gulp.task('serve', function() {
     browserSync.init(serverConfig);
 });
 
 gulp.task('start', function() {
+    gulp.watch(path.src.html, gulp.series('html:build'));
     gulp.watch(path.src.style, gulp.series('style:build'));
     gulp.watch(path.src.img, gulp.series('image:build'));
     gulp.watch(path.src.fonts, gulp.series('fonts:build'));
