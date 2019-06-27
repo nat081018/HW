@@ -39,7 +39,6 @@ const serverConfig = {
     server: {
         baseDir: "./public"
     },
-    tunnel: true,
     host: 'localhost',
     port: 9000,
     logPrefix: "My_project",
@@ -93,5 +92,3 @@ gulp.task('start', function() {
     gulp.watch(path.src.img, gulp.series('image:build'));
     gulp.watch(path.src.fonts, gulp.series('fonts:build'));
 });
-
-
