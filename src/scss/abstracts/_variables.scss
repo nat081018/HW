@@ -1,19 +1,26 @@
+// colors
+
+$dark: #263238;
+$white: #fff;
+$red: #e74c3c;
+$green: #8bc34a;
+
 // background colors
 
-$bg-primary: #263238;
+$bg-primary: $dark;
 $bg-secondary: #f4f6f5;
-$bg-extra: #fff;
-$bg-note: #8bc34a;
+$bg-extra: $white;
+$bg-note: $green;
 $bg-empty: #d4d4d4;
-$btn-warning: #e74c3c;
+$btn-bg-warning: $red;
 
 // fonts colors
 
-$clr-primary: #263238;
+$clr-primary: $dark;
 $clr-secondary: #546e7a;
-$clr-extra: #fff;
-$clr-note: #8bc34a;
-$clr-warning: #e74c3c;
+$clr-extra: $white;
+$clr-note: $green;
+$clr-warning: $red;
 $clr-holder: #90a4ae;
 $clr-holder-extra: #697378;
 $clr-sub: #b7c3c8;
@@ -34,6 +41,6 @@ $fs-48: 48px;
 
 // margins and paddings
 
-$pad-120: 120px 0;
-$pad-15: 0 15px;
+$section-space: 120px 0;
+$col-space: 0 15px;
 
