@@ -18,5 +18,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "imagemin-pngquant": "^8.0.0"
+  },
+  "dependencies": {
+    "bower": "^1.8.8"
   }
 }
