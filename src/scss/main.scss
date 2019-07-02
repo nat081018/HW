@@ -2,6 +2,7 @@
 @import "./reset";
 @import "./abstracts/variables";
 @import "./default-classes";
+@import "./abstracts/mixins";
 
 body {
     font-family: $ff-roboto-reg;
@@ -9,3 +10,4 @@ body {
     line-height: 1;
     color: $clr-primary;
 }
+
