@@ -1,0 +1,30 @@
+.header__description-btn {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $bg-note;
+    font-family: $ff-roboto-reg;
+    color: $clr-extra;
+    font-size: $fs-12;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .2s linear;
+
+
+    &:hover {
+        background-color: darken($bg-note, 10);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &--warning {
+        background-color: $bg-warning;
+        margin-left: 5px;
+
+        &:hover {
+            background-color: darken($bg-warning, 10);
+        }
+    }
+}

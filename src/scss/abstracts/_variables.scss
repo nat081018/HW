@@ -12,7 +12,7 @@ $bg-secondary: #f4f6f5;
 $bg-extra: $white;
 $bg-note: $green;
 $bg-empty: #d4d4d4;
-$btn-bg-warning: $red;
+$bg-warning: $red;
 
 // fonts colors
 
@@ -27,6 +27,7 @@ $clr-sub: #b7c3c8;
 
 // font size 
 
+$fs-11: 11px;
 $fs-12: 12px;
 $fs-14: 14px;
 $fs-15: 15px;
@@ -49,6 +50,7 @@ $ff-raleway-bold: "ralewaybold";
 // margins and paddings
 
 $section-space: 120px 0;
+$section-space-secondary: 25px 0;
 $col-space: 0 15px;
 
 $container-width: 1200px;
