@@ -1,15 +1,16 @@
 @import "./fonts" ;
-// @import "./reset";
 @import "./variables.scss" ;
 @import "./default-classes";
 
 body {
-    font-size: $fontSize36;
-    background: $background;
+    font-size: $ff-roboto-reg;
+    font-size: $fs-14;
+    line-height: 1;
+    color: $clr-primary;
+    
 }
 
-.title {
-    font-size: $fontSize36; 
-    color: $fontGray;
+.title { 
+    
 }
 
