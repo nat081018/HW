@@ -1,0 +1,8 @@
+.section-default { 
+  padding: $section-space;
+}
+.container {
+    max-width:  $container-width;
+    padding: $col-space;
+    color: $fontGray;
+}

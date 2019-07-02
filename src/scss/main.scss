@@ -1,0 +1,15 @@
+@import "./fonts" ;
+// @import "./reset";
+@import "./variables.scss" ;
+@import "./default-classes";
+
+body {
+    font-size: $fontSize36;
+    background: $background;
+}
+
+.title {
+    font-size: $fontSize36; 
+    color: $fontGray;
+}
+

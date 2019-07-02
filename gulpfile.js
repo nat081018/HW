@@ -39,7 +39,6 @@ const serverConfig = {
     server: {
         baseDir: "./public"
     },
-    tunnel: true,
     host: 'localhost',
     port: 9000,
     logPrefix: "My_project",
