@@ -18,10 +18,13 @@
 
     &--warning {
         background-color: $bg-warning;
-        margin-left: 5px;
 
         &:hover {
             background-color: darken($bg-warning, 10);
         }
+    }
+
+    &--marg-left {
+        margin-left: 5px;
     }
 }
