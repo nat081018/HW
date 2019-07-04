@@ -3,10 +3,10 @@
 @import "./default-classes";
 
 body {
-    font-family: $ff-roboto-reg;
-    font-size: $fs-14;
-    line-height: 1;
-    color: $clr-primary;   
+  font-family: $ff-roboto-reg;
+  font-size: $fs-14;
+  line-height: 1;
+  color: $clr-primary;   
 }
 
 .banner {
@@ -18,7 +18,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; 
-  position: relative;
 }
 
 .title--banner {
@@ -32,7 +31,7 @@ body {
   font-family: $ff-roboto-bold;
   font-size: $fs-20;
   color: $clr-extra;
-  margin: 35px 0 55px 0;
+  margin: 35px 0 55px ;
 } 
 
 
