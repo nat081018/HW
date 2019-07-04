@@ -1,3 +1,14 @@
-@import "_reset";
-@import "./abstracts/_variables";
+@import "./fonts";
+@import "./reset";
+@import "./abstracts/variables";
+@import "./default-classes";
+@import "./abstracts/mixins";
+@import "./components/buttons";
+@import "./header.scss";
 
+body {
+    font-family: $ff-roboto-reg;
+    font-size: $fs-14;
+    line-height: 1;
+    color: $clr-primary;
+}

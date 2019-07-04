@@ -1,0 +1,9 @@
+.container {
+    max-width: $container-width;
+    padding: $col-space;
+    margin: 0 auto;
+}
+
+.section-default {
+    padding: $section-space;
+}
