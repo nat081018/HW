@@ -1,0 +1,19 @@
+.card {
+    width: 25%;
+    padding: 0 15px;
+    height: 300px;
+    background-color: #ccc;
+    border: 2px solid #000;
+}
+
+.tabs {
+    &__item {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &--active {
+            display: flex;
+        }
+    }
+}
