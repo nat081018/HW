@@ -1,3 +1,10 @@
+body {
+    font-family: $ff-roboto-reg;
+    font-size: $fs-14;
+    line-height: 1;
+    color: $clr-primary;
+}
+
 .container {
     max-width: $container-width;
     padding: $col-space;
@@ -6,4 +13,41 @@
 
 .section-default {
     padding: $section-space;
+}
+
+.col-4 {
+    width: $width-33;
+    padding: $col-space;
+}
+
+.col-6 {
+	width: $width-50;
+}
+
+.title {
+    color: $clr-primary;
+    font-family: $ff-roboto-bold;
+    font-size: $fs-36;
+    line-height: 60px;
+}
+
+.title--secondary {
+    color: $clr-extra;
+}
+
+.title-extra {
+    color: $clr-extra;
+    font-family: $ff-roboto-reg;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--right {
+    text-align: right;
 }

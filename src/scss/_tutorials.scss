@@ -1,0 +1,38 @@
+.tutorials {
+    padding: $section-space;
+}
+
+.tutorials__title {
+    margin-bottom: 55px;
+}
+
+.tutorials__layout {
+    @include flex;
+}
+
+.tutorials__item {
+    background-color: #f8f8f8;
+    padding-bottom: 15px;
+    transition: box-shadow .3s linear;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+}
+
+.tutorials__item-photo {
+    height: 270px;
+    background-color: #d4d4d4;
+    overflow: hidden;
+}
+
+.tutotrials__item-title {
+    color: $clr-primary;
+    font-family: $ff-roboto-bold;
+    margin-top: 15px;
+    transition: color .2s linear;
+}
+
+.tutorials__item-link:hover .tutotrials__item-title {
+    color: $clr-note;
+} 
