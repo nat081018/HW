@@ -1,6 +1,7 @@
 @import "./fonts" ;
 @import "./variables.scss" ;
 @import "./default-classes";
+@import "./banner.scss";
 
 body {
   font-family: $ff-roboto-reg;
@@ -8,67 +9,6 @@ body {
   line-height: 1;
   color: $clr-primary;   
 }
-
-.banner {
-  height: 100vh; 
-  background-image: url(../img/banner.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center; 
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-}
-
-.title--banner {
-  font-family: $ff-roboto-bold;
-  font-size: $fs-48;
-  color: $clr-extra;
-}
-
-.banner__text {
-  text-align: center;
-  font-family: $ff-roboto-bold;
-  font-size: $fs-20;
-  color: $clr-extra;
-  margin: 35px 0 55px ;
-} 
-
-
-.search_position {
-  display: flex;
-  justify-content:center;
-}
-
-.search {
-  /* поставить переменную цвета. шрифт*/
-  font-family: inherit;
-  color: $clr-holder-extra;
-  width: 70%;
-  padding-left: 23px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(140,156,121,0.5);
-}
-
-.banner__input {
-  border: none;
-  line-height: 57px;
-  width: 89%;
-  color: inherit;
-  background-color: inherit;
-}
-
-.search_btn {
-  line-height: 57px;
-  width: 10%;
-  background-color: inherit;
-}
-
-.search_icon {
-  font-size: 20px;
-  color: inherit;
-}
-
 
 
 
