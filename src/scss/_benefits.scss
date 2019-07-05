@@ -11,6 +11,11 @@
     margin-bottom: 80px;
 }
 
+.benefits__item-title {
+    cursor: default;
+    transition: color .2s linear;
+}
+
 .benefits__item {
 
     &:hover .benefits__item-title {
@@ -40,6 +45,7 @@
         height: 113px;
         background-color: #697378;
         opacity: 0.8;
+        transition: opacity .2s linear;
     }
 }
 
