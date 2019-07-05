@@ -8,12 +8,8 @@
 
 .tabs {
     &__item {
-        display: none;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
-        &--active {
-            display: flex;
-        }
     }
 }
