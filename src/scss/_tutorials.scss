@@ -1,22 +1,22 @@
 .tutorials {
     padding: $section-space;
-}
 
-.tutorials__title {
-    margin-bottom: 55px;
-}
+    &__title {
+        margin-bottom: 55px;
+    }
 
-.tutorials__layout {
-    @include flex;
-}
+    &__layout {
+        @include flex;
+    }
 
-.tutorials__item {
-    background-color: #f8f8f8;
-    padding-bottom: 15px;
-    transition: box-shadow .3s linear;
-
-    &:hover {
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    &__item {
+        background-color: #f8f8f8;
+        padding-bottom: 15px;
+        transition: box-shadow .3s linear;
+    
+        &:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
     }
 }
 

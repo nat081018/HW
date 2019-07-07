@@ -1,29 +1,29 @@
 .offer {
     background-color: $bg-secondary;
     padding: 130px 0;
-}
 
-.offer__layout {
-    max-width: 1105px;
-    background-color: $bg-nobel;
-    padding: 110px 220px;
-    margin: 0 auto;
-    box-shadow: -2px 3px 25px 0px #cccc;
+    &__layout {
+        max-width: 1105px;
+        background-color: $bg-nobel;
+        padding: 110px 220px;
+        margin: 0 auto;
+        box-shadow: -2px 3px 25px 0px #cccc;
+    }
 }
 
 .offer__wrapper {
     @include flex;
     padding: 70px 60px 80px;
     background-color: $bg-note;
-}
 
-.offer__text {
-    color: $clr-extra;
-    font-family: $ff-roboto-reg;
-    font-size: $fs-30;
-    line-height: 36px;
-
-    span {
-        font-family: $ff-roboto-bold;
+    &-text {
+        color: $clr-extra;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-30;
+        line-height: 36px;
+    
+        span {
+            font-family: $ff-roboto-bold;
+        }
     }
 }
