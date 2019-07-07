@@ -1,6 +1,7 @@
 @import "./fonts" ;
 @import "./variables.scss" ;
 @import "./default-classes";
+@import "./card/card.scss";
 
 body {
     font-size: $ff-roboto-reg;
@@ -9,24 +10,4 @@ body {
     color: $clr-primary;  
 }
 
-.card{
-    width: 25%;
-    padding: 0 15px;
-    height: 300px;
-    background-color: aqua;
-    border: 2px solid #fff;
-
-}
-.tabs {
-    &__item {
-        display: none;
-        flex-wrap:wrap;
-        justify-content: space-between; 
-    }
-
-    &--active {
-        display:flex;
-    }
-    
-}
 

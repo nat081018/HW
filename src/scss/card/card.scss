@@ -1,0 +1,65 @@
+@import './variables';
+
+.card{
+    width: 25%;
+    padding: 0 15px;
+    height: 300px;
+    background-color:$bg-color-white;
+    border: 1px solid #d4d4d4;
+}
+
+.card:hover {
+    box-shadow: 16 0 20 rgba(217, 219, 219, .75);
+}
+
+.card__header {
+    background-color: $bg-color-alto;
+}
+
+.card__main {
+    background-color: $bg-color-white;
+    font-family: $ff-roboto-reg;
+    border: 1px solid #d4d4d4;
+}
+
+.description__common {
+    color: $font-outer-space;
+    font-size: $fs-18;
+}
+
+.description__technology {
+    color: $font-sushi;
+    font-size: $fs-14;
+
+}
+
+.price {
+    color: $font-outer-space;
+    font-size: $fs-20;
+}
+
+.card__footer {
+    border: 1px solid #d4d4d4;
+}
+
+.footer__icon {
+    background-color: $bg-color-nobel;
+    border-radius: 50%;
+}
+
+.footer__text {
+    color: $font-slate-gray;
+}
+.tabs {
+    &__item {
+        display: none;
+        flex-wrap:wrap;
+        justify-content: space-between; 
+    }
+
+    &--active {
+        display:flex;
+    }
+    
+}
+
