@@ -1,3 +1,14 @@
+@import "./fonts";
+@import "./reset";
+@import "./abstracts/variables";
+@import "./default-classes";
+@import "./abstracts/mixins";
+@import "./components/buttons";
+@import "./header.scss";
+@import "./benefits";
+@import "./offer";
+@import "./tutorials";
+
 .card {
     width: 25%;
     padding: 0 15px;
