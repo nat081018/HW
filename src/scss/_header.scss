@@ -1,3 +1,9 @@
+$icon-wrapper-bg: #f5f5f5;
+$icon-wrapper-size: 34px;
+$description-icon-clr: #a0a0a0;
+$description-purchases-size: 18px;
+$icon-wrapper-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
+
 .header__description {
     background-color: $bg-extra;
     padding: $section-space-secondary;
@@ -31,21 +37,21 @@
 
 .header__description-icon-wrapper {
     position: relative;
-    width: 34px;
-    height: 34px;
+    width: $icon-wrapper-size;
+    height: $icon-wrapper-size;
     border-radius: 50%;
-    background-color: #f5f5f5;
+    background-color: $icon-wrapper-bg;
     margin: 0 25px;
     transition: box-shadow .2s linear;
 
     &:hover {
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        box-shadow: $icon-wrapper-hover-shadow;
     }
 }
 
 .header__description-icon {
     position: absolute;
-    color: #a0a0a0;
+    color: $description-icon-clr;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -54,8 +60,8 @@
 .header__description-purchases {
     position: absolute;
     background-color: $bg-warning;
-    width: 18px;
-    height: 18px;
+    width: $description-purchases-size;
+    height: $description-purchases-size;
     border-radius: 50%;
     right: 0;
     top: -8px;
