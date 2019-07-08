@@ -1,3 +1,7 @@
+$item-bg: #f8f8f8;
+$item-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
+$item-photo-size: 270px;
+
 .tutorials {
     padding: $section-space;
 
@@ -10,19 +14,19 @@
     }
 
     &__item {
-        background-color: #f8f8f8;
+        background-color: $item-bg;
         padding-bottom: 15px;
         transition: box-shadow .3s linear;
     
         &:hover {
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: $item-hover-shadow;
         }
     }
 }
 
 .tutorials__item-photo {
-    height: 270px;
-    background-color: #d4d4d4;
+    height: $item-photo-size;
+    background-color: $bg-additional;
     overflow: hidden;
 }
 
