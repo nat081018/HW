@@ -92,5 +92,3 @@ gulp.task('start', function() {
     gulp.watch(path.src.img, gulp.series('image:build'));
     gulp.watch(path.src.fonts, gulp.series('fonts:build'));
 });
-
-
