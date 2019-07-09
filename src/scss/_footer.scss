@@ -5,7 +5,7 @@ $license-clr: #919699;
 $license-border: 1px solid #424d53;
 $email-border: 1px solid #000;
 $email-bg: #2f3c43;
-$social-btn-size: 40px;
+$social-btn-size: 37px;
 $newsletter-size: 260px;
 $email-size: 100%;
 
@@ -183,7 +183,7 @@ $email-size: 100%;
         width: $email-size;
         background-color: $email-bg;
         border: $email-border;
-        padding: 12px 45px 12px 15px;
+        padding: 11px 45px 11px 15px;
         outline: none;
         color: $clr-extra;
 
@@ -197,8 +197,8 @@ $email-size: 100%;
 
     &__btn {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 1px;
+        right: 1px;
         background-color: $bg-note;
         height: $social-btn-size;
         padding: 0 15px;
