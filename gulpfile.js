@@ -10,6 +10,8 @@ const gulp = require('gulp'),
     pngQuant = require('imagemin-pngquant'),
     babel = require('gulp-babel'),
     concat = require('gulp-concat'),
+    browserify = require('browserify'),
+    source = require('vinyl-source-stream'),
     browserSync = require('browser-sync').create();
 
 const path = {
@@ -67,14 +69,16 @@ gulp.task('style:build', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('js:build', function(){
-    return gulp.src(path.src.js)
+gulp.task('js:build', function() {
+    gulp.src(path.src.js)
         .pipe(babel({
             presets: ['@babel/env']
         }))
-        .pipe(concat('index.js'))
+        .pipe(concat('index.js'));
+    return browserify('./src/js/index.js')
+        .bundle()
+        .pipe(source('bundle.js'))
         .pipe(gulp.dest(path.public.js));
-
 });
 
 gulp.task('image:build', function() {
@@ -95,7 +99,7 @@ gulp.task('fonts:build', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('style:build','js:build', 'html:build', 'image:build', 'fonts:build'));
+gulp.task('build', gulp.series('style:build', 'js:build', 'html:build', 'image:build', 'fonts:build'));
 
 gulp.task('serve', function() {
     browserSync.init(serverConfig);
@@ -107,7 +111,4 @@ gulp.task('start', function() {
     gulp.watch(path.src.js, gulp.series('js:build'));
     gulp.watch(path.src.img, gulp.series('image:build'));
     gulp.watch(path.src.fonts, gulp.series('fonts:build'));
-    gulp.watch(path.src.js, gulp.series('js:build'));
 });
-
-

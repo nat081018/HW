@@ -2,13 +2,13 @@
 @import "./variables.scss" ;
 @import "./default-classes";
 @import "./card/card.scss";
-
+@import "./slider.scss";
 
 body {
     font-size: $ff-roboto-reg;
     font-size: $fs-14;
     line-height: 1;
-    color: $clr-primary;  
+    color: $clr-primary; 
 }
 
 * {

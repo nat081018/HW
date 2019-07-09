@@ -1,29 +1,30 @@
 @import './variables';
 
-.card{
-    margin: 15px;
-    width:445px ;
-    // padding: 0 15px;
-    background-color:$bg-color-white;
+.card { 
+    width:25% ;
+    padding: 0 15px;  
+}
+
+.card__wrapper {
     border: 1px solid #d4d4d4;
+    background-color:$bg-color-white;
 }
 
 .card__triangle {
     border: 65px solid transparent;	
     border-left: 65px solid green;
     border-top: 0 solid green;
-    z-index: 555;
-
+    position: relative;
 }
 
-// .card::before { 
-//     border: 65px solid transparent;	
-//     border-left: 65px solid green;
-//     border-top: 65px solid green;
+.card__icon-lightning {
+    color: white;
+    position: absolute;
+    top: 13px;
+    left: -46px;
+}
 
-// }
-
-.card:hover {
+.card__wrapper:hover {
     box-shadow: 16 0 20 rgba(217, 219, 219, .75);
 }
 
@@ -31,9 +32,8 @@
 
 .card__header {
     background-color: $bg-color-alto;
-    width: 445px;
     height: 250px;
- }
+}
 
 .card__main {
     display: flex;
@@ -69,6 +69,10 @@
     padding: 20px 30px;
 }
 
+.icon__text-wrapper {
+    display: flex;
+}
+
 .footer__icon {
     background-color: $bg-color-nobel;
     border-radius: 50%;
@@ -79,18 +83,20 @@
 .footer__text {
     color: $font-slate-gray;
     line-height: 30px;
-    padding: 3px 113px 0 14px;
+    padding: 3px  0 0 14px;
 }
+
 
 .stars {
     display: flex;
     line-height: 30px;
+    padding-left: 34px
 
 }
 
 .footer__stars {
     color: #ffa726;
-    padding: 3px;
+    padding-top: 3px;
 }
 
 .mark {
