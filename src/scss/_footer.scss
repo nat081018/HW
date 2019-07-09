@@ -17,10 +17,19 @@ $email-size: 100%;
         @include flex;
         margin-bottom: 90px;
     }
-}
 
-.footer__card--offset {
-    padding-left: 45px;
+    &__license {
+        padding: 15px 0 20px;
+        color: $license-clr;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-15;
+        line-height: 36px;
+        border-top: $license-border;
+    }
+
+    &__card--offset {
+        padding-left: 45px;
+    }
 }
 
 .footer__card-title {
@@ -214,13 +223,4 @@ $email-size: 100%;
     &__icon {
         color: $clr-extra;
     }
-}
-
-.license {
-    padding: 15px 0 20px;
-    color: $license-clr;
-    font-family: $ff-roboto-reg;
-    font-size: $fs-15;
-    line-height: 36px;
-    border-top: $license-border;
 }
