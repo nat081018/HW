@@ -106,9 +106,9 @@ gulp.task('serve', function() {
 });
 
 gulp.task('start', function() {
-    gulp.watch(path.src.html, gulp.series('html:build'));
-    gulp.watch(path.src.style, gulp.series('style:build'));
-    gulp.watch(path.src.js, gulp.series('js:build'));
-    gulp.watch(path.src.img, gulp.series('image:build'));
-    gulp.watch(path.src.fonts, gulp.series('fonts:build'));
+    gulp.watch(path.watch.html, gulp.series('html:build'));
+    gulp.watch(path.watch.style, gulp.series('style:build'));
+    gulp.watch(path.watch.js, gulp.series('js:build'));
+    gulp.watch(path.watch.img, gulp.series('image:build'));
+    gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
 });

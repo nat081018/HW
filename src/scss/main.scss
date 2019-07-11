@@ -5,9 +5,9 @@
 @import "./abstracts/mixins";
 @import "./slider";
 
-// * {
-//     box-sizing: border-box;
-// }
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: $ff-roboto-reg;
@@ -22,6 +22,10 @@ body {
     height: 300px;
     background-color: #ccc;
     border: 2px solid #000;
+}
+
+.slider__item .card{
+    width: 100%;
 }
 
 .tabs {
