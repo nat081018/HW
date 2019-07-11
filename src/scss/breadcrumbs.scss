@@ -1,0 +1,39 @@
+.breadcrumbs {
+    $root: ".breadcrumbs";
+
+    padding: 45px 0;
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 10px;        
+        &::after {
+            content: "-";
+            display: inline-block;
+            color: #8bc34a;
+            margin-left: 7px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &::after {
+                display: none;
+            }
+
+            #{$root}__link {
+                color: #263238;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 15px;
+        color: #b0bec5;
+    }
+
+    
+}

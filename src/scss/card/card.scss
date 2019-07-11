@@ -2,5 +2,22 @@
 
 
 .card {
+    border: 2px solid #e3e3e3;
+}
 
+.card__product-photo {
+    height: 250px;
+    width: 100%;
+    color: #d4d4d4;
+}
+
+.card__product-about {
+    height: 90px;
+    width: 100%;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.card__product-review {
+    height: 70px;
+    width: 100%;
 }
