@@ -2,6 +2,8 @@
 @import "./variables.scss" ;
 @import "./default-classes";
 @import "./banner.scss";
+@import "./reset.scss";
+
 
 body {
   font-family: $ff-roboto-reg;

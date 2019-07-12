@@ -1,6 +1,7 @@
 .section-default { 
   padding: $section-space;
 }
+
 .container {
   max-width:  $container-width;
   padding: $col-space;
@@ -9,8 +10,13 @@
 
 button {
   padding: 0;
+  outline: none;
   border: none;
   font: inherit;
   color: inherit;
   background-color: transparent;
+} 
+
+input {
+  outline: none;
 } 
