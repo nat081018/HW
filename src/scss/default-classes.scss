@@ -6,3 +6,15 @@
     padding: $col-space;
     color: $fontGray;
 }
+
+.title { 
+  font-family: $ff-roboto-bold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+
+}
+
+.text-center {
+  text-align: center;
+}
