@@ -15,20 +15,11 @@ body {
     padding: $section-space;
 }
 
-.col-4 {
-    width: $width-33;
-    padding: $col-space;
-}
-
-.col-6 {
-	width: $width-50;
-}
-
 .title {
     color: $clr-primary;
     font-family: $ff-roboto-bold;
-    font-size: $fs-36;
     line-height: 60px;
+    font-size: $fs-36;
     text-transform: capitalize;
 
     &--secondary {
@@ -51,9 +42,4 @@ body {
 
 .text--right {
     text-align: right;
-}
-
-.col-3 {
-    width: $width-25;
-    padding: $col-space;
 }
