@@ -4,14 +4,27 @@ $item-description-clr: #b0bec5;
 
 .benefits {
     background-color: $bg-primary;
-    padding: $section-space;
+    padding: $section-mobile;
 
     &__layout {
-        @include flex;
+
+        @media (min-width: 595px) {
+            @include flex;
+        }
     }
 
     &__title {
-        margin-bottom: 80px;
+        font-size: $fs-30;
+        margin-bottom: 50px;
+
+        @media (min-width: 925px) {
+            font-size: $fs-36;
+            margin-bottom: 80px;
+        }
+    }
+
+    @media (min-width: 925px) {
+        padding: $section-space;
     }
 }
 
@@ -57,5 +70,19 @@ $item-description-clr: #b0bec5;
         font-family: $ff-roboto-reg;
         font-size: $fs-15;
         line-height: 24px;
+    }
+
+    &-wrapper {
+        padding: $col-space;
+        margin-bottom: 40px;
+
+        @media (min-width: 595px) {
+            width: $width-50;
+        }
+
+        @media (min-width: 925px) {
+            width: $width-33;
+            margin: 0;
+        }
     }
 }

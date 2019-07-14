@@ -14,21 +14,67 @@ $email-size: 100%;
     padding-top: 115px;
 
     &__layout {
-        @include flex;
-        margin-bottom: 90px;
+
+        @media (min-width: 560px) {
+            @include flex;
+        }
+
+        @media (min-width: 1103px) {
+            margin-bottom: 90px;
+        }
     }
 
     &__license {
         padding: 15px 0 20px;
         color: $license-clr;
         font-family: $ff-roboto-reg;
-        font-size: $fs-15;
+        font-size: $fs-12;
         line-height: 36px;
         border-top: $license-border;
+
+        @media (min-width: 700px) {
+            font-size: $fs-15;
+        }
     }
 
     &__card--offset {
-        padding-left: 45px;
+
+        @media (min-width: 1200px) {
+            padding-left: 45px;
+        }
+    }
+
+    &__wrapper {
+        padding: $col-space;
+        margin-bottom: 50px;
+
+        @media (min-width: 425px) {
+            padding-left: 50px;
+        }
+
+        @media (min-width: 500px) {
+            padding-left: 100px;
+        }
+
+        @media (min-width: 560px) {
+            width: $width-50;
+            padding: $col-space;
+        }
+
+        @media (min-width: 700px) {
+            padding-left: 50px;
+        }
+
+        @media (min-width: 750px) {
+            padding-left: 100px;
+        }
+
+        @media (min-width: 1103px) {
+            width: $width-25;
+            padding: $col-space;
+            margin: 0;
+        }
+
     }
 }
 
@@ -87,6 +133,10 @@ $email-size: 100%;
 
         &:hover {
             color: $clr-note;
+        }
+
+        @media (min-width: 560px) and (max-width: 700px) {
+            font-size: $fs-12;
         }
 
     }
