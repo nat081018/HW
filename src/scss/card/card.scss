@@ -8,6 +8,7 @@
 
 .title--tabs { 
     color: $fontGray;
+    font-size: 36px;
 }
 
 .tabs__menu {
@@ -18,37 +19,30 @@
 
 .tabs__menu-item {
     margin-right: 10px;
-  
 }
 
 .tabs__menu-item:last-child {
     margin-right: 0;
 }
 
-
 .tabs__menu-btn {
     padding: 9px 25px;
-    /* width: 70px; */
-    /* height: 11px; */
     color: $dark;
-    font-family:$ff-roboto-reg;
+    font-family:$ff-roboto-bold;
     font-size: 14px;
-    font-weight: 500;
     background-color: $bg-extra;
+    cursor: pointer;
     /* line-height: 60px; */
 }
 
 .tabs__menu-btn:hover {
     box-shadow: 0 2px 5px rgba(202, 215, 228, 0.75);
     background-color: $btn-bg-warning;
-
 }
-
 
 .card { 
     width:25% ;
-    padding: 0 15px;  
-
+    padding: 15px;  
 }
 
 .card__wrapper {
@@ -82,37 +76,33 @@
 .card__main {
     display: flex;
     justify-content: space-between;
+    font-family:$ff-roboto-bold;
     background-color: $bg-color-white;
-    padding: 30px 30px;
+    padding: 30px 30px 18px;
+
 }
 
 .description__common {
-    color: $font-cutty-sark;
-    font-family:$ff-roboto-bold;
-    font-weight: 500;
+    color: $fontGray;
     font-size: $fs-18;
-    line-height: 60px;
 }
 
 .description__technology {
     color: $font-sushi;
     font-size: $fs-14;
-    font-weight: 500;
+    margin-top: 14px;
 }
 
 .price {
-    font-family:$ff-roboto-bold;
     color: $fontGray;
     font-size: 20px;
     font-weight: 700;
     padding-top: 8px;
-    line-height: 60px;
-    
 }
 
 .card__footer {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     border-top: 1px solid #d4d4d4;
     padding: 20px 30px;
 }
@@ -133,52 +123,51 @@
 color: $font-cutty-sark;
 font-family:$ff-roboto-bold;
 font-size: 14px;
-font-weight: 500;
-padding-left: 14px;
+padding-left: 9px;
 }
-
 
 .stars {
     display: flex;
-    padding-left: 38px;
 }
 
 .footer__stars {
     color: #ffa726;
     padding-top: 3px;
     font-size: 12px;
-    font-weight: 400;
 }
 
 .mark {
-color: $fontGray;
-font-family:$ff-roboto-reg;
-font-size: $fs-14;
-font-weight: 400;
-margin-left: 14px;
-padding: 3px;
+    color: $fontGray;
+    font-family:$ff-roboto-reg;
+    font-size: $fs-14;
+    margin-left: 10px;
+    padding: 3px;
 }
 
 .mark::before {
     content: '(';
+    color: #b0bec5;
 }
 
 .mark::after {
     content: ')';
+    color: #b0bec5;
+}
 
+.btn__all-new {
+    display: flex;
+    justify-content: center;
+}
+
+.news {
+    margin: 75px 8px 5px ;
+    font-size: $fs-16;
+    font-family: $ff-roboto-reg;
+    color: $fontGray;
+    background-color: $bg-extra;
+    padding: 20px 33px 17px;
+    box-shadow: 0 1px 3px rgba(204, 216, 228, 0.75); 
 }
 
 
-.tabs {
-    &__item {
-        display: none;
-        flex-wrap:wrap;
-        justify-content: space-between; 
-    }
-
-    &--active {
-        display:flex;
-    }
-    
-}
 

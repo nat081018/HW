@@ -1,3 +1,9 @@
+@import './variables';
+@import './reset.scss';
+@import './default-classes.scss';
+
+
+
 /* Slider */
 
 .slick-slider {
@@ -97,4 +103,69 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+// ///////////////
+
+.slick-dots {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+#slick-slide-control00 {
+    color: #e8e8e8;
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    // border: 1px solid #000000;
+    background-color: #e8e8e8;
+}
+
+#slick-slide-control01 {
+    color: #e8e8e8;
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    // border: 1px solid #000000;
+    background-color: #e8e8e8;
+
+}
+
+.slick-active {
+    // background-color: #8bc34a;
+}
+
+
+// end
+
+.trends {
+    padding: $section-space;
+    background-color: $bg-extra;
+}
+
+.title--trends {
+    color: $fontGray;
+    font-size: $fs-36;
+    margin-bottom: 40px;
+}
+
+.slider__item  .card {
+    width: 100%;
+
+}
+
+.tabs {
+    &__item {
+        // display: none;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:center; 
+    }
+
+    &--active {
+        display:flex;
+    }
+    
 }
