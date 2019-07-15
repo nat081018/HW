@@ -5,14 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Foxtar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
   <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
   <main>
+    <header>
+      <ul id="menu">
+        <li>
+          <a href="#">link 1</a>
+        </li>
+        <li>
+          <a href="#">link 2</a>
+        </li>
+        <li>
+          <a href="#">link 3</a>
+        </li>
+        <li>
+          <a href="#">link 4</a>
+        </li>
+        <li>
+          <a href="#">link 5</a>
+        </li>
+      </ul>
+    </header>
+
     <section class="tabs section-default">
       <div class="container">
         <h2>adasdadasd</h2>
       </div>
+
+      <input type="text" class="range" name="price" value="">
+
+      <select name="asd" id="asd">
+        <option value="asd">123</option>
+        <option value="adsa">3213</option>
+        <option value="asdasds">123123</option>
+      </select>
 
       <div class="tabs__holder">
         <ul class="tabs__menu">
@@ -107,6 +136,29 @@
     </section>
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
   <script src="./js/bundle.js"></script>
+  <script>
+    $('.range').ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000,
+    from: 200,
+    to: 500,
+    grid: true
+});
+  </script>
+  <script>
+    $('#menu').slicknav({
+      prependTo: '.header__nav',
+      easingOpen: "easeOutBounce"
+    });
+    $('input, select').styler();
+    </script>
 </body>
 </html>
