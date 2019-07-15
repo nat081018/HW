@@ -1,0 +1,108 @@
+$icon-wrapper-bg: #f5f5f5;
+$icon-wrapper-size: 34px;
+$description-icon-clr: #a0a0a0;
+$description-purchases-size: 18px;
+$icon-wrapper-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+.header__description {
+    background-color: $bg-extra;
+    padding: $section-space-secondary;
+}
+
+.header__description-layout {
+    @include flex (space-between, center);
+}
+
+.header__description-text {
+    font-size: $fs-15;
+    color: $clr-secondary;
+
+    span {
+        color: $clr-warning;
+    }
+
+    a {
+        color: $clr-secondary;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $clr-note;
+        }
+    }
+}
+
+.header__description-help-wrapper {
+    @include flex (center, center);
+}
+
+.header__description-icon-wrapper {
+    position: relative;
+    width: $icon-wrapper-size;
+    height: $icon-wrapper-size;
+    border-radius: 50%;
+    background-color: $icon-wrapper-bg;
+    margin: 0 25px;
+    transition: box-shadow .2s linear;
+
+    &:hover {
+        box-shadow: $icon-wrapper-hover-shadow;
+    }
+}
+
+.header__description-icon {
+    position: absolute;
+    color: $description-icon-clr;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header__description-purchases {
+    position: absolute;
+    background-color: $bg-warning;
+    width: $description-purchases-size;
+    height: $description-purchases-size;
+    border-radius: 50%;
+    right: 0;
+    top: -8px;
+    right: -6px;
+    text-align: center; 
+    color: $clr-extra;
+    font-size: $fs-11;
+    line-height: 18px
+}
+
+.header__menu {
+    background-color: $bg-primary;
+    padding: 20px 0;
+}
+
+.header__nav-list {
+    @include flex (flex-start);
+    list-style: none;
+    font-family: $ff-roboto-reg;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-list-item {
+    margin-right: 40px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__nav-link {
+    color: $clr-extra;
+    font-weight: 500;
+    text-decoration: none;
+    transition: text-decoration .2s linear, color .2s linear;
+
+    &:hover {
+        text-decoration: underline;
+        color: $clr-note;
+    }
+}
