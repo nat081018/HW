@@ -4,6 +4,7 @@
 @import "./card/card.scss";
 @import "./slider.scss";
 @import "./reset.scss";
+@import "./slicknav.scss";
 
 
 body {
@@ -20,6 +21,21 @@ body {
 
 li {
     list-style-type: none;
+}
+
+#menu {
+	display:none;
+}
+
+@media screen and (min-width: 992px) {
+	/* #menu is the original menu */
+	 #menu {
+		display: block;
+	}
+	
+	.slicknav_menu {
+		display:none;
+	}
 }
 
 
