@@ -7,7 +7,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -29,9 +29,23 @@ body {
 }
 
 button {
+    padding: 0;
+    outline: none;
     border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
 }
 
 a {
     text-decoration: none;
+}
+
+input {
+    outline: none;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
 }
