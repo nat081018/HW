@@ -1,0 +1,63 @@
+.banner {
+    height: $sertion-height;
+    background-image: url(../img/banner.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .title--banner {
+    font-family: $ff-roboto-bold;
+    font-size: $fs-48;
+    color: $clr-extra;
+  }
+  
+  .banner__text {
+    text-align: center;
+    font-family: $ff-roboto-bold;
+    font-size: $fs-20;
+    color: $clr-extra;
+    margin: 35px 0 55px;
+  } 
+  
+  
+  .search_position {
+    display: flex;
+    justify-content:center;
+  }
+  
+  .search {
+    font-family:$ff-raleway-bold;
+    color: $clr-holder-extra;
+    border-radius: 5px;
+    width: 93%;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
+  }
+  
+  .banner__input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 23px;
+    line-height: 57px;
+    width: 82%;
+  }
+  
+  .search_btn {
+    font-family: $ff-roboto-light;
+    font-size: $fs-20;
+    line-height: 57px;
+    width: 10%;
+    background-color: transparent;
+  }
+  
+  .search_icon {
+    font-size: 20px;
+  }
+  
+  
+  
