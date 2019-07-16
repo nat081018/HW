@@ -1,18 +1,12 @@
-@import "./fonts" ;
-@import "./variables.scss" ;
+@import "./fonts";
+@import "./reset";
+@import "./abstracts/variables";
 @import "./default-classes";
+@import "./abstracts/mixins";
+@import "./components/buttons";
+@import "./header.scss";
+@import "./benefits";
+@import "./offer";
+@import "./tutorials";
 @import "./banner.scss";
-@import "./reset.scss";
-
-
-body {
-  font-family: $ff-roboto-reg;
-  font-size: $fs-14;
-  line-height: 1;
-  color: $clr-primary;   
-}
-
-
-
-
-
+@import "./footer";
