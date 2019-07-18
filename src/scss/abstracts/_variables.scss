@@ -1,24 +1,11 @@
-
-// $fonts: Roboto-bold, Raleway;
-$fontWhite: #ffffff;
-$fontGray: #263238;
-$btnLine-Hight: 30px;
-$btnColor: #ffffff;
-$background: #f4f6f5;
-$ff-raleway-reg:'ralewayregular';
-$ff-raleway-light: 'raleway_lightregular';
-$ff-raleway-bold:'ralewaybold';
-$ff-roboto-reg: 'robotoregular';
-$ff-roboto-light:'roboto_lightregular' ;
-$ff-roboto-bold:'robotobold' ;
-
-
 // colors
 
 $dark: #263238;
 $white: #fff;
 $red: #e74c3c;
 $green: #8bc34a;
+$nobel: #b5b5b5;
+$grey: #d4d4d4;
 
 // background colors
 
@@ -27,7 +14,9 @@ $bg-secondary: #f4f6f5;
 $bg-extra: $white;
 $bg-note: $green;
 $bg-empty: #d4d4d4;
-$btn-bg-warning: $red;
+$bg-warning: $red;
+$bg-nobel: $nobel;
+$bg-additional: $grey;
 
 // fonts colors
 
@@ -42,6 +31,7 @@ $clr-sub: #b7c3c8;
 
 // font size 
 
+$fs-11: 11px;
 $fs-12: 12px;
 $fs-14: 14px;
 $fs-15: 15px;
@@ -50,13 +40,28 @@ $fs-18: 18px;
 $fs-20: 20px;
 $fs-22: 22px;
 $fs-24: 24px;
+$fs-26: 26px;
 $fs-30: 30px;
 $fs-36: 36px;
 $fs-48: 48px;
 
-// margins and padding
+$btnLine-Hight: 30px;
+
+$ff-roboto-reg: "robotoregular";
+$ff-roboto-light: "roboto_lightregular";
+$ff-roboto-bold: "robotobold";
+$ff-raleway-reg: "ralewayregular";
+$ff-raleway-light: "raleway_lightregular";
+$ff-raleway-bold: "ralewaybold";
+
+// margins and paddings
 
 $section-space: 120px 0;
+$section-space-secondary: 25px 0;
 $col-space: 0 15px;
-$container-width:1200px;
+$section-mobile: 75px 0;
 
+$container-width: 1200px;
+$width-25: 25%;
+$width-33: 33.3333%;
+$width-50: 50%;

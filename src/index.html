@@ -9,13 +9,96 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
   <link  type="text/css" rel="stylesheet" href="./css/main.css">
+  <script src="https://kit.fontawesome.com/f1a9c0826b.js"></script>
 </head>
 <body>
+  <header class="header">
+    <div class="header__description">
+      <div class="container">
+        <div class="header__description-layout">
+          <div class="header__description-logo-wrapper">
+              <a href="./index.html">
+                <img src="./img/logo.png" alt="Logo" class="header__description-logo">
+              </a>
+            </div>
+            <div class="header__description-help-wrapper">
+              <p class="header__description-text"><span>Need help?</span> Talk to an expert: <a href="tel:61383766284">+61 3 8376 6284</a></p>
+              <a href="#" class="header__description-icon-wrapper">
+                <span class="header__description-purchases">8</span>
+                <i class="fas fa-shopping-cart header__description-icon"></i>
+              </a>
+              <div class="header__description-btn-wrapper">
+                <button class="btn">Login</button>
+                <button class="btn btn--warning btn--marg-left">Register</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">About</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">WordPress</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">Joomla</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">PSD</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">Plugins</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">Components</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">Pages</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">Contact</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="" class="header__nav-link">Help</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
   <main>
-    <section class=" tabs section-default">
+    <section class="banner">
+      <div class="container"> 
+        <h1 class="title title--banner">Welcome To Foxtar Market Place!</h1> 
+        <div class="banner__text">
+            <p>Premium WordPress Themes, Web Templates and Many More ...</p>
+        </div>
+        <div class="search_position">
+          <div class="search">
+            <form>
+              <input class="banner__input" type="text" placeholder="Search Your Keywords . . .">
+              <button class="search_btn" type="submit">
+                  <span class="fa fa-search search_icon"></span>
+              </button>
+            </form>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs section-default">
       <div class="container">
       </div>
-      <h2 class="title title--tabs text-center">Let’s Check Out Our Newest Release Prodcuts</h2>
+      <h2 class="title title--tabs text--center">Let’s Check Out Our Newest Release Prodcuts</h2>
       <div class="tabs__holder">
         <ul class="tabs__menu">
           <li class="tabs__menu-item">
@@ -1252,7 +1335,7 @@
       </div>
     </section>
     <section class="trends">
-      <h2 class="title title--trends text-center" >This Week Trending Products</h2>
+      <h2 class="title title--trends text--center" >This Week Trending Products</h2>
       <div class="trends__slider slider js-slider">
         <div class="slider__item">
           <div class=" tabs__card  card">
@@ -1676,9 +1759,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </script>
-
 <script src="./js/bundle.js"></script>
-<script>
+<!-- <script>
   $ ('.range').ionRangeSlider({
     type: "double",
     min: 0,
@@ -1690,6 +1772,6 @@
 </script>
 <script>
   $('#menu').slicknav();
-</script> 
+</script>  -->
 </body>
 </html>

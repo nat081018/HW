@@ -1,42 +1,12 @@
-@import "./fonts.scss" ;
-@import "./variables.scss" ;
-@import "./default-classes";
-@import "./card/card.scss";
-@import "./slider.scss";
-@import "./reset.scss";
+// @import "./fonts.scss" ;
+@import "./abstracts/variables" ;
+@import "./_default-classes";
+@import "./_card.scss";
+@import "./_slider";
+@import "./_reset.scss";
 @import "./slicknav.scss";
 
 
-body {
-    font-size: $ff-roboto-reg;
-    font-size: $fs-14;
-    line-height: 1;
-    color: $clr-primary; 
-}
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-#menu {
-	display:none;
-}
-
-@media screen and (min-width: 992px) {
-	/* #menu is the original menu */
-	 #menu {
-		display: block;
-	}
-	
-	.slicknav_menu {
-		display:none;
-	}
-}
 
 
 

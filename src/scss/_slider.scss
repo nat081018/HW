@@ -1,4 +1,4 @@
-@import './variables';
+@import './abstracts/variables';
 @import './reset.scss';
 @import './default-classes.scss';
 
@@ -160,7 +160,7 @@
 }
 
 .title--trends {
-    color: $fontGray;
+    color: $dark;
     font-size: $fs-36;
     margin-bottom: 40px;
 }
