@@ -15,7 +15,7 @@ $('.js-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: false,
-    dots : true
+    dots : true,
 });
 
 
