@@ -106,3 +106,17 @@ $icon-wrapper-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
         color: $clr-note;
     }
 }
+
+.slicknav_menu {
+	display: none;
+}
+
+@media screen and (max-width: 40em) {
+	#menu {
+		display: flex;
+	}
+	
+	.slicknav_menu {
+		display: none;
+	}
+}
