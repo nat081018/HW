@@ -1,13 +1,8 @@
-@import "./abstracts/variables";
-@import './_reset.scss';
-@import './default-classes.scss';
-
 
 // background color 
 $bg-color-alto:#d4d4d4;
 $bg-color-nobel: #b5b5b5;
 $bg-color-white: #fff;
-$bg-color-mercury: #E8E8E8;
 // size 
 
 $width: 25%;
@@ -15,7 +10,6 @@ $width: 25%;
 // font color 
 $fonts-yellow: #ffa726;
 $font-cutty-sark: #546E7A;
-$font-sushi:#8BC34A;
 $font-outer-space: #263238;
 $font-regent-gray :#81929A;
 $font-slate-gray: #74868e;
@@ -67,7 +61,7 @@ $font-slate-gray: #74868e;
 
 .card__wrapper {
     box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
-    background-color:$bg-color-white;
+    background-color: $bg-extra;
 }
 
 .card__wrapper:hover {
@@ -97,7 +91,7 @@ $font-slate-gray: #74868e;
     display: flex;
     justify-content: space-between;
     font-family:$ff-roboto-bold;
-    background-color: $bg-color-white;
+    background-color: $bg-extra;
     padding: 30px 30px 18px;
 
 }
@@ -108,7 +102,7 @@ $font-slate-gray: #74868e;
 }
 
 .description__technology {
-    color: $font-sushi;
+    color: $clr-note;
     font-size: $fs-14;
     margin-top: 14px;
 }

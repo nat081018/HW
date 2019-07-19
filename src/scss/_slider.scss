@@ -1,10 +1,5 @@
-@import './abstracts/variables';
-@import './reset.scss';
-@import './default-classes.scss';
+$dots-size: 16px;
 
-
-
-/* Slider */
 
 .slick-slider {
     position: relative;
@@ -117,14 +112,14 @@
     background-color: $bg-color-mercury;
     border:none;
     border-radius: 50%;
-    height: 16px;
-    width: 16px;
+    height: $dots-size;
+    width: $dots-size;
     margin: 0 3px;
     outline: none;
 }
 
 .slick-dots button:focus {
-    background-color: $font-sushi;
+    background-color: $bg-note;
 }
 
 // .slick-dots button:focus {
