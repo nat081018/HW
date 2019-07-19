@@ -1,4 +1,5 @@
 $dots-size: 16px;
+$slick-dot-color-active: green;
 
 
 .slick-slider {
@@ -31,6 +32,7 @@ $dots-size: 16px;
         cursor: hand;
     }
 }
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
@@ -107,6 +109,10 @@ $dots-size: 16px;
     justify-content: center;
 }
 
+.slick-dots li.slick-active button {
+    background: $bg-note;
+}
+
 .slick-dots button {
     color: transparent;
     background-color: $bg-color-mercury;
@@ -116,38 +122,12 @@ $dots-size: 16px;
     width: $dots-size;
     margin: 0 3px;
     outline: none;
+
 }
 
 .slick-dots button:focus {
     background-color: $bg-note;
 }
-
-// .slick-dots button:focus {
-//     background-color: $green;
-// }
-
-// #slick-slide-control00 {
-//     color: #e8e8e8;
-//     margin: 0 10px;
-//     border-radius: 50%;
-//     width: 16px;
-//     height: 16px;
-//     // border: 1px solid #000000;
-//     background-color: #e8e8e8;
-// }
-
-// #slick-slide-control01 {
-//     color: #e8e8e8;
-//     margin: 0 10px;
-//     border-radius: 50%;
-//     width: 16px;
-//     height: 16px;
-//     // border: 1px solid #000000;
-//     background-color: #e8e8e8;
-
-// }
-
-// end
 
 .trends {
     padding: $section-space;
@@ -167,7 +147,6 @@ $dots-size: 16px;
 
 .tabs {
     &__item {
-        // display: none;
         display: flex;
         flex-wrap:wrap;
         justify-content:center; 
@@ -175,6 +154,7 @@ $dots-size: 16px;
 
     &--active {
         display:flex;
+        background-color: $bg-note;
     }
     
 }

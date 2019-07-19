@@ -1,27 +1,19 @@
-
-// background color 
-$bg-color-alto:#d4d4d4;
-$bg-color-nobel: #b5b5b5;
-$bg-color-white: #fff;
-// size 
-
+$card-size: 250px;
 $width: 25%;
+$bg-color-nobel: #b5b5b5;
+
 
 // font color 
 $fonts-yellow: #ffa726;
-$font-cutty-sark: #546E7A;
-$font-outer-space: #263238;
 $font-regent-gray :#81929A;
 $font-slate-gray: #74868e;
-
-
 
 .section-default {
     background-color: $bg-secondary;
 }
 
 .title--tabs { 
-    color: $font-outer-space;
+    color: $clr-primary;
     font-size: $fs-36;
 }
 
@@ -43,29 +35,39 @@ $font-slate-gray: #74868e;
     padding: 9px 25px;
     color: $dark;
     font-family:$ff-roboto-bold;
-    font-size: 14px;
+    font-size: $fs-14;
     background-color: $bg-extra;
     cursor: pointer;
-    /* line-height: 60px; */
+    transition: box-shadow .2s linear, background-color .2s linear, color .2s linear;
+
+    &:hover {
+        box-shadow: 0 2px 5px rgba(202, 215, 228, 0.75);
+        background-color: $bg-warning;
+    }
+
+    &:focus {
+        background-color: $bg-warning;
+    }
 }
 
-.tabs__menu-btn:hover {
-    box-shadow: 0 2px 5px rgba(202, 215, 228, 0.75);
-    background-color: $red;
+.mixitup-control-active {
+    background-color: $bg-warning;
+    color: $clr-extra;
 }
 
 .card { 
-    width:25% ;
+    width: $width;
     padding: 15px;  
 }
 
 .card__wrapper {
     box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
     background-color: $bg-extra;
-}
+    transition: box-shadow .2s linear;
 
-.card__wrapper:hover {
-    box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    &:hover {
+        box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    }
 }
 
 .card__triangle {
@@ -83,8 +85,8 @@ $font-slate-gray: #74868e;
 }
 
 .card__header {
-    background-color: $bg-color-alto;
-    height: 250px;
+    background-color: $bg-empty;
+    height: $card-size;
 }
 
 .card__main {
@@ -134,7 +136,7 @@ $font-slate-gray: #74868e;
 }
 
 .footer__text {
-color: $font-cutty-sark;
+color: $clr-secondary;
 font-family:$ff-roboto-bold;
 font-size: 14px;
 padding-left: 9px;
@@ -147,7 +149,7 @@ padding-left: 9px;
 .footer__stars {
     color: $fonts-yellow;
     padding-top: 3px;
-    font-size: 12px;
+    font-size: $fs-12;
 }
 
 .mark {
@@ -180,7 +182,13 @@ padding-left: 9px;
     color: $dark;
     background-color: $bg-extra;
     padding: 20px 33px 17px;
-    box-shadow: 0 1px 3px rgba(204, 216, 228, 0.75); 
+    box-shadow: 0 1px 3px rgba(204, 216, 228, 0.75);
+    transition: box-shadow .2s linear, background-color .2s linear;
+
+    &:hover {
+        box-shadow: 0 2px 5px rgba(202, 215, 228, 0.75);
+        background-color: $bg-warning;
+    }
 }
 
 
