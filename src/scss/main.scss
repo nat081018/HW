@@ -1,3 +1,12 @@
-@import "_reset";
-@import "./abstracts/_variables";
-
+@import "./fonts";
+@import "./reset";
+@import "./abstracts/variables";
+@import "./default-classes";
+@import "./abstracts/mixins";
+@import "./components/buttons";
+@import "./header.scss";
+@import "./benefits";
+@import "./offer";
+@import "./tutorials";
+@import "./banner.scss";
+@import "./footer";
