@@ -1,5 +1,10 @@
+$sertion-height: 530px;
+$search-width: 93%;
+$input-width: 82%;
+$search-btn-width: 10%;
+
 .banner {
-    height: 100vh; 
+    height: $sertion-height;
     background-image: url(../img/banner.jpg);
     background-size:cover;
     background-repeat: no-repeat;
@@ -30,29 +35,41 @@
   }
   
   .search {
-    /* поставить переменную цвета. шрифт*/
     font-family:$ff-raleway-bold;
     color: $clr-holder-extra;
-    width: 70%;
+    border-radius: 5px;
+    width: $search-width;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(140,156,121,0.5);
+    box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
   }
   
   .banner__input {
     border: none;
     outline: none;
+    border-radius: 5px;
     padding-left: 23px;
     line-height: 57px;
-    width: 82%;
+    width: $input-width;
   }
   
   .search_btn {
+    font-family: $ff-roboto-light;
+    font-size: $fs-20;
     line-height: 57px;
-    width: 10%;
+    width: $search-btn-width;
+    background-color: transparent;
   }
   
   .search_icon {
-    font-size: 20px;
+    font-size: $fs-20;
+
+    &::before {
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: $clr-note;
+    }
   }
   
   
