@@ -23,13 +23,15 @@
             </div>
             <div class="header__description-help-wrapper">
               <p class="header__description-text"><span>Need help?</span> Talk to an expert: <a href="tel:61383766284">+61 3 8376 6284</a></p>
-              <a href="#" class="header__description-icon-wrapper">
-                <span class="header__description-purchases">8</span>
-                <i class="fas fa-shopping-cart header__description-icon"></i>
-              </a>
-              <div class="header__description-btn-wrapper">
-                <button class="btn">Login</button>
-                <button class="btn btn--warning btn--marg-left">Register</button>
+              <div class="header__description-overlay">
+                <a href="#" class="header__description-icon-wrapper">
+                  <span class="header__description-purchases">8</span>
+                  <i class="fas fa-shopping-cart header__description-icon"></i>
+                </a>
+                <div class="header__description-btn-wrapper">
+                  <button class="btn">Login</button>
+                  <button class="btn btn--warning btn--marg-left">Register</button>
+                </div>
               </div>
             </div>
         </div>
@@ -1941,6 +1943,10 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </script>
+<script
+src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
 <script src="./js/bundle.js"></script>
 <!-- <script>
   $ ('.range').ionRangeSlider({
@@ -1951,9 +1957,14 @@
     to: 500,
     grid: true
 });
-</script>
+</script> -->
 <script>
-  $('#menu').slicknav();
-</script>  -->
+  $('#menu').slicknav({
+    label: "",
+    duration: 1000,
+    prependTo: '.header__menu',
+    easingOpen: "easeOutBounce"
+  });
+</script> 
 </body>
 </html>
