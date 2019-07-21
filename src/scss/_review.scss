@@ -1,0 +1,38 @@
+$review-photo-width: 830px;
+$review-photo-height: 420px;
+$review-des-clr: #707070;
+
+
+.product-overview {
+    background-color: #f4f6f5;
+}
+
+.review {
+
+    &__photo {
+        width: $review-photo-width;
+        height: $review-photo-height;
+        background-color: $bg-empty;
+    }
+
+    &__photo-wrapper {
+        padding: 20px;
+        background-color: $bg-extra;
+    }
+
+    &__title {
+        color: $clr-primary;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-30;
+        font-weight: 500;
+        line-height: 40px;
+        margin: 40px 0 25px;
+    }
+
+    &__description {
+        color: $review-des-clr;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-16;
+        line-height: 24px;
+    }
+}
