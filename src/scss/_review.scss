@@ -1,13 +1,30 @@
+$review-max-width: 900px;
 $review-photo-width: 830px;
 $review-photo-height: 420px;
-$review-des-clr: #707070;
-
-
-.product-overview {
-    background-color: #f4f6f5;
-}
+$tabs-width: 870px;
+$tabs-height: 265px;
+$menu-item-width: 25%;
+$review-tabs-border: 1px solid #d7d7d7;
+$btn-active-border: 3px solid $bg-note;
+$tabs-btn-width: 100%;
+$material-link-clr: #f4f6f5;
+$material-link-height: 50px;
+$link-bg-dark: #455a64;
+$network-link-width: 54px;
+$network-link-height: 50px;
+$facebook-bg-link: #6370b6;
+$twitter-bg-link: #64b5f6;
+$linkedin-bg-link: #4f71ce;
+$pinterest-bg-link: #d32f2f;
+$production-layout-width: 33.3333%;
+$production-pic-width: 100px;
+$production-pic-height: 90px;
+$production-item-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+$production-hover-shadow: 0 0 5px rgba(75, 72, 72, 0.5);
 
 .review {
+    padding-right: 30px;
+    max-width: $review-max-width;
 
     &__photo {
         width: $review-photo-width;
@@ -18,6 +35,8 @@ $review-des-clr: #707070;
     &__photo-wrapper {
         padding: 20px;
         background-color: $bg-extra;
+        border: $wrapper-border;
+        overflow: hidden;
     }
 
     &__title {
@@ -30,9 +49,270 @@ $review-des-clr: #707070;
     }
 
     &__description {
-        color: $review-des-clr;
+        color: $clr-additional;
         font-family: $ff-roboto-reg;
         font-size: $fs-16;
         line-height: 24px;
+    }
+
+    &__benefits {
+        color: $clr-additional;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-16;
+        line-height: 36px;
+    }
+
+    &__list {
+        margin-right: 35px;
+    }
+}
+
+.review-tabs {
+    background-color: $bg-extra;
+    border: $review-tabs-border;
+
+    &__menu {
+        @include flex;
+        border-bottom: $review-tabs-border;
+
+        &-item {
+            width: $menu-item-width;
+            border-right: $review-tabs-border;
+
+            &:active {
+                border-bottom: 2px solid green;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+
+            .mixitup-control-active {
+                background-color: transparent;
+                color: $clr-primary;
+                border-bottom: $btn-active-border;
+            }
+        }
+    }
+
+    &__btn {
+        color: $clr-inactive;
+        font-family: $ff-roboto-bold;
+        font-size: $fs-16;
+        line-height: 60px;
+        cursor: pointer;
+        width: $tabs-btn-width;
+    }
+
+    &__card {
+        width: $tabs-width;
+        height: $tabs-height;
+        padding: 35px;
+
+        &-comment {
+            color: $clr-additional;
+            font-family: $ff-roboto-reg;
+            font-size: $fs-16;
+            line-height: 36px;
+        }
+
+        &-name {
+            color: $clr-note;
+            margin: 10px 0 20px;
+        }
+
+        &-pic {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__support-item {
+        color: $clr-additional;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-16;
+        line-height: 36px;
+    }
+}
+
+.card--flex {
+    @include flex;
+}
+
+.help-material {
+    @include flex;
+
+    &__item {
+        margin-right: 18px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        color: $material-link-clr;
+        font-family: $ff-roboto-reg;;
+        font-size: $fs-16;
+        font-weight: 500;
+        height: $material-link-height;
+        line-height: 50px;
+        background-color: $link-bg-dark;
+        padding: 0 25px;
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: darken($link-bg-dark, 10);
+        }
+
+        &--warning {
+            background-color: $bg-warning;
+
+            &:hover {
+                background-color: darken($bg-warning, 10);
+            }
+        }
+
+        &--note {
+            background-color: $bg-note;
+
+            &:hover {
+                background-color: darken($bg-note, 10);
+            }
+        }
+    }
+}
+
+.help {
+    @include flex (space-between, center);
+    margin: 45px 0 55px;
+}
+
+.help-network {
+    @include flex;
+
+    &__item {
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        @include flex (center, center);
+        flex-direction: column;
+        width: $network-link-width;
+        height: $network-link-height;
+        color: $clr-extra;
+        transition: background-color .2s linear;
+
+        &--facebook {
+            background-color: $facebook-bg-link;
+
+            &:hover {
+                background-color: darken($facebook-bg-link, 10);
+            }
+        }
+
+        &--twitter {
+            background-color: $twitter-bg-link;
+
+            &:hover {
+                background-color: darken($twitter-bg-link, 10);
+            }
+        }
+
+        &--linkedin {
+            background-color: $linkedin-bg-link;
+
+            &:hover {
+                background-color: darken($linkedin-bg-link, 10);
+            }
+        }
+
+        &--pinterest {
+            background-color: $pinterest-bg-link;
+
+            &:hover {
+                background-color: darken($pinterest-bg-link, 10);
+            }
+        }
+
+        i {
+            font-size: $fs-18;
+        }
+    }
+}
+
+.assortment {
+    background-color: $bg-extra;
+    padding: 20px 28px;
+    margin: 50px 0 30px;
+
+    h3 {
+        color: $clr-primary;
+        font-family: $ff-roboto-bold;
+        font-size: $fs-18;
+        line-height: 24px;
+
+        a {
+            color: $clr-primary;
+        }
+    }
+}
+
+.production {
+    @include flex;
+    margin: 0 -15px 90px;
+
+
+    &__layout {
+        width: $production-layout-width;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        @include flex;
+        box-shadow: $production-item-shadow;
+        transition: box-shadow .2s linear;
+
+        &:hover {
+            box-shadow: $production-hover-shadow;
+        }
+    }
+
+    &__pic {
+        width: $production-pic-width;
+        height: $production-pic-height;
+        background-color: $bg-empty;
+        overflow: hidden;
+    }
+
+    &__info-wrapper {
+        padding: 20px 22px 10px;
+        background-color: $bg-extra;
+    }
+
+    &__title {
+        color: $clr-primary;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-14;
+        font-weight: bolder;
+    }
+
+    &__role {
+        color: $clr-note;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-12;
+        margin: 7px 0;
+    }
+
+    &__price {
+        color: $clr-primary;
+        font-family: $ff-roboto-bold;
+        font-size: $fs-18;
     }
 }

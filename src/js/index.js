@@ -6,9 +6,9 @@ var ionRangeSlider = require('ion-rangeslider');
 var slickNav = require('./jquery.slicknav.min.js');
 var mixer = mixitup('.tabs__items-container',{
     load: {
-        filter: '.all'
+        filter: '.all',
+    },
 
-    }
 });
 
 $('.js-slider').slick({
