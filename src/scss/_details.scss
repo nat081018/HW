@@ -41,6 +41,34 @@ $icon-clr: #a6b5bb;
         line-height: 40px;
     }
 
+    &__btn {
+
+        &--cart {
+            background-color: $bg-note;
+    
+            &:hover {
+                background-color: darken($bg-note, 10);
+            }
+        }
+    
+        &--favourite {
+            background-color: $btn-bg-favourite;
+    
+            &:hover {
+                background-color: darken($btn-bg-favourite, 10);
+            }
+        }
+    
+        &--buy {
+            background-color: $btn-bg-buy;
+            margin-bottom: 0;
+    
+            &:hover {
+                background-color: darken($btn-bg-buy, 10);
+            }
+        }
+    }
+
     &__avatar {
         width: $card-avatar-width;
         height: $card-avatar-height;
@@ -108,34 +136,6 @@ $icon-clr: #a6b5bb;
 .wrapper--start {
     justify-content: flex-start;
     margin: 25px 0 5px;
-}
-
-.btn {
-
-    &--cart {
-        background-color: $bg-note;
-
-        &:hover {
-            background-color: darken($bg-note, 10);
-        }
-    }
-
-    &--favourite {
-        background-color: $btn-bg-favourite;
-
-        &:hover {
-            background-color: darken($btn-bg-favourite, 10);
-        }
-    }
-
-    &--buy {
-        background-color: $btn-bg-buy;
-        margin-bottom: 0;
-
-        &:hover {
-            background-color: darken($btn-bg-buy, 10);
-        }
-    }
 }
 
 .product-card__list {
