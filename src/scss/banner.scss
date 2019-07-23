@@ -41,7 +41,7 @@ $box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
     color: $clr-holder-extra;
     border-radius: 5px;
     width: $search-width;
-    background-color: #fff;
+    background-color: $bg-extra;
     box-shadow: $input-box-shadow;
 
     &--shadow {
