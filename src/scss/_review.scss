@@ -78,6 +78,7 @@ $production-hover-shadow: 0 0 5px rgba(75, 72, 72, 0.5);
         &-item {
             width: $menu-item-width;
             border-right: $review-tabs-border;
+            text-align: center;
 
             &:active {
                 border-bottom: 2px solid green;
@@ -120,6 +121,10 @@ $production-hover-shadow: 0 0 5px rgba(75, 72, 72, 0.5);
             color: $clr-note;
             margin: 10px 0 20px;
         }
+
+        &--flex {
+            @include flex;
+        }
     }
 
     &__support-item {
@@ -128,10 +133,6 @@ $production-hover-shadow: 0 0 5px rgba(75, 72, 72, 0.5);
         font-size: $fs-16;
         line-height: 36px;
     }
-}
-
-.card--flex {
-    @include flex;
 }
 
 .help-material {
