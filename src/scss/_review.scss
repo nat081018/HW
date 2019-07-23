@@ -22,6 +22,14 @@ $production-pic-height: 90px;
 $production-item-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
 $production-hover-shadow: 0 0 5px rgba(75, 72, 72, 0.5);
 
+.product-overview {
+    background-color: $bg-secondary;
+
+    &__layout {
+        @include flex;
+    }
+}
+
 .review {
     padding-right: 30px;
     max-width: $review-max-width;
