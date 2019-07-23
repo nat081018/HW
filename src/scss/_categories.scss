@@ -1,3 +1,79 @@
-.categoires {
+$categories-card-border: 1px solid #dde3e8;
+$categories-btn-bg: 205px;
+
+.categories {
     width: $aside-width;
+
+    &__card {
+        padding: 5px 30px 30px;
+        border: $wrapper-border;
+        background-color: $bg-extra;
+        margin-bottom: 30px;
+
+        &-title {
+            color: $clr-primary;
+            font-family: $ff-roboto-bold;
+            font-size: $fs-20;
+            line-height: 60px;
+            border-bottom: $card-title-border;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__btn {
+        color: $clr-extra;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-15;
+        line-height: 40px;
+        background-color: $bg-note;
+        width: $categories-btn-bg;
+        padding: 3px 0;
+        cursor: pointer;
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: darken($bg-note, 10);
+        }
+    }
+}
+
+.categories__card-item {
+    width: 100%;
+    padding: 0;
+
+    .card__wrapper {
+        box-shadow: none;
+        background-color: transparent;
+        border-bottom: $categories-card-border;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+
+
+    .card__header {
+        height: 120px;
+    }
+
+    .card__main {
+        padding: 15px 0;
+    }
+
+    .card__footer {
+        padding: 10px 0;
+        border: none;
+    }
+
+    .price {
+
+        p {
+            font-size: $fs-16;
+        }
+    }
+}
+
+.categories__card-item--border {
+
+    .card__wrapper {
+        border: none;
+    }
 }
