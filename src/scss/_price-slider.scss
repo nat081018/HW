@@ -1,0 +1,51 @@
+$slider-clr: #78909c;
+$slider-line-bg: #37474f;
+$slider-line-height: 5px;
+$handler-border: 3px solid $bg-note;
+$handler-size: 16px;
+$slider-empty-line: #f2f5f8;
+
+.categories {
+
+    .irs {
+
+        margin: -15px 0 50px;
+
+        .irs-to {
+            background-color: transparent;
+            color: $slider-clr;
+            font-family: $ff-roboto-reg;
+            font-size: 15px;
+            top: 60px;
+
+            &::before {
+                border: none;
+            }
+        }
+
+        .irs-from {
+            @extend .irs-to;
+        }
+
+        .irs-bar {
+            background-color: $slider-line-bg;
+            height: $slider-line-height;
+        }
+
+        .irs-handle {
+            border: $handler-border; 
+            height: $handler-size;
+            width: $handler-size;
+            top: 30px;
+        }
+
+        .irs-line {
+            height: $slider-line-height;
+            background-color: $slider-empty-line;
+        }
+
+        .irs-single {
+            @extend .irs-to;
+        }
+    }
+}

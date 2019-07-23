@@ -35,6 +35,10 @@ $categories-btn-bg: 205px;
             background-color: darken($bg-note, 10);
         }
     }
+
+    &__search-icon {
+        margin-right: 8px;
+    }
 }
 
 .categories__card-item {

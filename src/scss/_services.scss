@@ -1,0 +1,69 @@
+$services-width: 900px;
+$service-filter-border: 1px solid #d7d7d7;
+$services-photo-height: 180px;
+
+.product-page {
+    background-color: $bg-secondary;
+
+    &__layout {
+        @include flex;
+    }
+}
+
+.services {
+    padding: 0 0 110px 30px;
+    max-width: $services-width;
+
+    &__filter {
+        background-color: $bg-extra;
+        padding: 20px;
+        border: $service-filter-border;
+        margin-bottom: 15px;
+    }
+
+    &__filter-text {
+        color: $clr-additional;
+        font-family: $ff-roboto-reg;
+        font-size: $fs-14;
+        line-height: 20px;
+    }
+
+    &__card-item {
+        width: 33.3333%;
+    }
+
+    &__tab-wrapper {
+        @include flex;
+        margin: 0 -15px 0 -15px;
+
+        .card__header {
+            height: $services-photo-height;
+        }
+
+        .card__main {
+            padding: 30px 20px 25px;
+        }
+
+        .card__footer {
+            padding: 15px 20px;
+            align-items: center;
+        }
+
+        .mark {
+            margin-left: 6px;
+        }
+
+        .footer__icon {
+            margin: 0;
+        }
+
+        .icon__text-wrapper {
+            align-items: center;
+        }
+
+        .description__common {
+            font-size: $fs-16;
+        }
+    }
+}
+

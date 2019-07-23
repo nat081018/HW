@@ -17,26 +17,3 @@ $('.js-slider').slick({
     arrows: false,
     dots : true,
 });
-
-$(function()
-{
-    $('.range').ionRangeSlider({
-        type: "double",
-        min: 0,
-        max: 1000,
-        from: 200,
-        to: 500,
-        grid: false,
-        step: 100
-    });
-
-    $('#menu').slicknav({
-  
-    });
-
-    $('input, select');
-});
-
-
-
-
