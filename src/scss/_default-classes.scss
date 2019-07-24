@@ -1,0 +1,59 @@
+body {
+    font-family: $ff-roboto-reg;
+    font-size: $fs-14;
+    line-height: 1;
+    color: $clr-primary;
+}
+
+.container {
+    max-width: $container-width;
+    padding: $col-space;
+    margin: 0 auto;
+}
+
+.section-default {
+    padding: $section-space;
+}
+
+.title {
+    color: $clr-primary;
+    font-family: $ff-roboto-bold;
+    line-height: 60px;
+    font-size: $fs-36;
+    text-transform: capitalize;
+
+    &--secondary {
+        color: $clr-extra;
+    }
+}
+
+.title-extra {
+    color: $clr-extra;
+    font-family: $ff-roboto-reg;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: capitalize;
+}
+
+.text--center {
+    text-align: center;
+}
+
+.text--right {
+    text-align: right;
+}
+
+
+// .container {
+//     max-width:  $container-width;
+//     padding: $col-space;
+//     color: $fontGray;
+// }
+
+// .title { 
+//   font-family: $ff-roboto-bold;
+//   line-height: 60px;
+
+// }
+
