@@ -17,3 +17,16 @@ $('.js-slider').slick({
     arrows: false,
     dots : true,
 });
+
+$('[data-popup]').on('click', openPopup);
+$('.pop-up__close').on('click', closePopup);
+
+function openPopup() {
+    var target = $(this).attr('data-popup');
+
+    $('#' + target).addClass('pop-up__overlay--is-opened');
+};
+
+function closePopup() {
+    $(this).closest('.pop-up__overlay').removeClass('pop-up__overlay--is-opened');
+};
