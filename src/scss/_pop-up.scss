@@ -1,19 +1,44 @@
 $overlay-bg: rgba(0, 0, 0, .6);
 $pop-up-shadow: 0 0 50px rgba(0, 0, 0, .7);
 $pop-up-ma-width: 730px;
-$pop-up-label-bg: #76ae36;
+$pop-up-bg: #76ae36;
+$pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
 
 .pop-up {
     position: absolute;
-    top: 50%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: $bg-note;
     padding: 90px 160px 110px;
-    box-shadow: $pop-up-shadow;
     max-width: $pop-up-ma-width;
     width: 100%;
 
+    animation: drop .6s linear forwards;
+            
+    @keyframes drop {
+
+        0% {
+            top: 50%;
+            opacity: 1;
+            box-shadow: $pop-up-shadow;
+        }
+
+        25% {
+            top: 65%;
+            opacity: 0.5;
+        }
+
+        70% {
+            top: 80%;
+            opacity: 0.5;
+        }
+
+        100% {
+            top: 100%;
+            opacity: 0;
+        }       
+    }
 
     &__overlay {
         display: none;
@@ -26,6 +51,28 @@ $pop-up-label-bg: #76ae36;
 
         &--is-opened {
             display: block;
+
+            .pop-up {
+                animation: popup .6s ease-out forwards;
+
+                @keyframes popup {
+            
+                    0% {
+                        opacity: 0;
+                    }
+            
+                    70% {
+                        top: 65%;
+                        opacity: 0.6;
+                    }
+            
+                    100% {
+                        top: 50%;
+                        opacity: 1;
+                        box-shadow: $pop-up-shadow;
+                    }        
+                }
+            }
         }
     }
 
@@ -35,6 +82,11 @@ $pop-up-label-bg: #76ae36;
         right: 30px;
         color: $clr-extra;
         font-size: $fs-18;
+        transition: transform .2s linear;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     &__title {
@@ -48,7 +100,7 @@ $pop-up-label-bg: #76ae36;
     &__label {
         @include flex;
         align-items: center;
-        background-color: $pop-up-label-bg;
+        background-color: $pop-up-bg;
         padding: 0 8px;
         margin-bottom: 8px;
 
@@ -72,10 +124,80 @@ $pop-up-label-bg: #76ae36;
         }
 
         &:focus {
+
             &::placeholder {
                 color: transparent;
             }
         }
     }
 
+    &__actions-wrapper {
+        @include flex (space-between);
+        margin: 20px 0 25px;
+
+    }
+
+    &__btn-login {
+        color: $clr-default;
+        font-family: $ff-roboto-bold;
+        text-transform: uppercase;
+        background-color: $bg-extra;
+        line-height: 48px;
+        box-shadow: $pop-up-login-shadow;
+        padding: 0 45px;
+        transition: background-color .2s linear;
+
+        &:hover {
+            background-color: darken($bg-extra, 10);
+        }
+    }
+
+    &__new-account {
+        color: $clr-extra;
+        font-size: 18px;
+        line-height: 50px;
+        background-color: $pop-up-bg;
+        padding: 0 32px;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &__lost-pass {
+        color: $clr-extra;
+        font-size: $fs-18;
+    }
 }
+  
+// .overlay__test {
+
+//     .pop-up__drop {
+//         animation: drop .6s linear forwards;
+    
+//         @keyframes drop {
+    
+//             0% {
+//                 top: 50%;
+//                 opacity: 1;
+//                 box-shadow: $pop-up-shadow;
+//             }
+    
+//             25% {
+//                 top: 65%;
+//                 opacity: 0.5;
+//             }
+    
+//             70% {
+//                 top: 80%;
+//                 opacity: 0.5;
+//             }
+    
+//             100% {
+//                 top: 100%;
+//                 opacity: 0;
+//             }       
+//         }
+//     }
+// }
+
