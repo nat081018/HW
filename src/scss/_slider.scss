@@ -158,3 +158,89 @@ $slick-dot-color-active: green;
     }
     
 }
+
+
+
+@media(min-width:480px) {
+
+    .title--tabs {
+        font-size: $fs-15;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .tabs__menu {
+        display: block;
+    }
+
+    .tabs__menu-item {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+       
+    }
+
+    .tabs__menu-btn  {
+        width: 300px;
+        padding: 15px 0;
+    }
+
+}
+
+
+@media(min-width:768px) {
+
+    .title--trends {
+        font-size: $fs-20;
+    }
+
+    // .tabs__menu {
+    //     flex-wrap: wrap;
+    // }
+
+    .card {
+        width: 50%;
+    }
+
+
+}
+
+@media(min-width:991px) {
+
+    .title--trends {
+        font-size: $fs-18;
+    }
+
+    .card__main {
+        display: block;
+    }
+
+    .description__technology {
+        text-align: center;
+    }
+
+    .icon__text-wrapper {
+        justify-content: center;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .card__footer {
+        display: block;
+        margin: auto;
+    }
+    .stars {
+        display: flex;
+        justify-content:space-between;
+
+    }
+  
+    
+}
+
+
+

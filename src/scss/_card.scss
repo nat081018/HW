@@ -9,6 +9,10 @@ $fonts-yellow: #ffa726;
 $font-regent-gray :#81929A;
 $font-slate-gray: #74868e;
 
+// 
+$header-height: 250px;
+
+
 .section-default {
     background-color: $bg-secondary;
 }
@@ -16,6 +20,8 @@ $font-slate-gray: #74868e;
 .title--tabs { 
     color: $clr-primary;
     font-size: $fs-36;
+
+   
 }
 
 .tabs__menu {
@@ -57,7 +63,7 @@ $font-slate-gray: #74868e;
 }
 
 .card { 
-    width: $width;
+    width: $width-25;
     padding: 15px;  
 }
 
@@ -87,7 +93,7 @@ $font-slate-gray: #74868e;
 
 .card__header {
     background-color: $bg-empty;
-    height: $card-size;
+    height: $header-height;
 }
 
 .card__main {
@@ -191,6 +197,133 @@ padding-left: 9px;
         background-color: $bg-warning;
     }
 }
+
+@media(min-width:480px) {
+
+    .title--trends {
+        font-size: $fs-15;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .tabs__menu {
+        display: block;
+    }
+
+    .tabs__menu-item {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+       
+    }
+
+    .tabs__menu-btn  {
+        width: 300px;
+        padding: 15px 0;
+    }
+
+}
+
+@media(min-width:768px) {
+
+    .title--tabs {
+        font-size: $fs-20;
+    }
+
+    .tabs__menu {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    .card__main {
+        display: block; 
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .icon__text-wrapper {
+        justify-content: center;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .card__footer {
+        display: block;
+        margin: auto;
+    }
+    .stars {
+        display: flex;
+        justify-content:center;
+    }
+
+    .footer__stars {
+        margin: 5px;
+    }
+
+    .mark {
+        margin: 5px;
+    }
+}
+
+@media(min-width:991px) {
+
+    .card {
+        width: 50%;
+    }
+
+    .card__main {
+        display: block; 
+    }
+
+    .description__common  {
+        font-size: $fs-14;
+        text-align: center;
+    }
+
+    .description__technology {
+        text-align: center;
+    }
+
+    .icon__text-wrapper {
+        justify-content: center;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .card__footer {
+        display: block;
+        margin: auto;
+    }
+    .stars {
+        display: flex;
+        justify-content:center;
+    }
+
+    .footer__stars {
+        margin: 5px;
+    }
+
+    .mark {
+        margin: 5px;
+    }
+}
+
+
+
+
+
+
 
 
 
