@@ -28,5 +28,5 @@ function openPopup() {
 };
 
 function closePopup() {
-    $(this).closest('.pop-up__overlay').removeClass('pop-up__overlay--is-opened').addClass('overlay__test');
+    $(this).closest('.pop-up__overlay').removeClass('pop-up__overlay--is-opened');
 };

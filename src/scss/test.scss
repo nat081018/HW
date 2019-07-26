@@ -10,7 +10,7 @@ $pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: $bg-note;
-    padding: 30px;
+    padding: 20px;
     max-width: $pop-up-ma-width;
     width: 100%;
 
@@ -68,15 +68,12 @@ $pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
         right: 30px;
         color: $clr-extra;
         transition: transform .2s linear;
-        font-size: $fs-30;
-
-        @media (min-width: 600px) {
-            font-size: $fs-24;
-        }
+        font-size: $fs-24;
 
         @media (min-width: 1200px) {
             font-size: $fs-18;
         }
+
 
         &:hover {
             transform: scale(1.2);
@@ -145,7 +142,6 @@ $pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
     }
 
     &__btn-login {
-        display: block;
         color: $clr-default;
         font-family: $ff-roboto-bold;
         font-size: $fs-18;
@@ -155,11 +151,6 @@ $pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
         box-shadow: $pop-up-login-shadow;
         padding: 0 45px;
         transition: background-color .2s linear;
-        margin: 0 auto 25px;
-
-        @media (min-width: 460px) {
-            margin: 0;
-        }
 
         @media (min-width: 950px) {
             font-size: $fs-14;
@@ -171,25 +162,23 @@ $pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
     }
 
     &__new-account {
-        display: block;
         color: $clr-extra;
         line-height: 50px;
         background-color: $pop-up-bg;
         padding: 0 32px;
-        flex-grow: 1;
+        flex-grow: 2;
         text-align: center;
+        margin-left: 30px;
         font-size: $fs-20;
 
-        @media (min-width: 460px) {
-            margin-left: 30px;
-        }
-
         @media (min-width: 950px) {
+            flex-grow: 1;
             font-size: $fs-18;
+            padding: 0 20px;
         }
 
         @media (min-width: 1100px) {
-            flex-grow: 0;
+            padding: 0 32px;
             margin-left: 0;
         }
 
@@ -205,5 +194,6 @@ $pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
         @media (min-width: 950px) {
             font-size: $fs-18;
         }
+
     }
 }
