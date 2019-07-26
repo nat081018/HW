@@ -28,7 +28,7 @@
                 <i class="fas fa-shopping-cart header__description-icon"></i>
               </a>
               <div class="header__description-btn-wrapper">
-                <button class="btn">Login</button>
+                <button class="btn" data-popup="login">Login</button>
                 <button class="btn btn--warning btn--marg-left">Register</button>
               </div>
             </div>
@@ -1938,6 +1938,38 @@
     </div>
     <p class="footer__license text--center">© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
   </footer>
+
+  <div class="pop-up__overlay" id="login">
+    <aside class="pop-up">
+        <button class="pop-up__close">
+          <i class=" fas fa-times "></i>         
+        </button>
+        <div class="pop-up__content">
+          <h2 class="pop-up__title">Login</h2>
+          <form action="">
+            <label class="pop-up__label" for="login-name">
+              <button ><i class="fas fa-user-alt"></i></button>
+              <input type="text" name="login-name" id="login-nam" class="pop-up__input" placeholder="Name">
+            </label>
+            <label class="pop-up__label" for="login-pass">
+                <button>
+                    <i class="fas fa-lock"></i>
+                  </button>
+                <input type="password" name="login-pass" id="login-pass" class="pop-up__input" placeholder="Password">
+              </label>
+              <div class="pop-up__actions-wrapper">
+                <button type="submit" class="pop-up__btn-login">submit</button>
+
+
+
+                <a href="#" class="pop-up__new-account"> <i class="fas fa-edit"></i> Create An Account? 
+                  
+              </div>
+              <a href="#" class="pop-up__lost-pass">Lost Password?</a>
+          </form>
+        </div>
+      </aside>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </script>
