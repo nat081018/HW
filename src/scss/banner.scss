@@ -1,5 +1,7 @@
 $sertion-height: 530px;
 $search-width: 670px;
+$search-width-mobile: 250px;
+$search-width-medium: 400px;
 $input-width: 100%;
 $input-box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
 $box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
@@ -27,6 +29,14 @@ $box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
     font-size: $fs-20;
     color: $clr-extra;
     margin: 35px 0 55px;
+
+    &--product {
+      font-size: $fs-16;
+
+      @media (min-width: 900px) {
+        font-size: $fs-20;
+      }
+    }
   } 
   
   
@@ -47,6 +57,18 @@ $box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
     &--shadow {
       box-shadow: $box-shadow-dark;
     }
+
+    &--product {
+      width: $search-width-mobile;
+
+      @media (min-width: 600px) {
+        width: $search-width-medium;
+      }
+
+      @media (min-width: 900px) {
+        width: $search-width;
+      }
+    }
   }
   
   .banner__input {
@@ -56,6 +78,14 @@ $box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
     padding-left: 23px;
     line-height: 57px;
     width: $input-width;
+
+    &--product {
+      line-height: 48px;
+
+      @media (min-width: 900px) {
+        line-height: 57px;
+      }
+    }
   }
   
   .search_btn {

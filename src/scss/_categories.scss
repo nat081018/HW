@@ -39,6 +39,21 @@ $categories-btn-bg: 205px;
     &__search-icon {
         margin-right: 8px;
     }
+
+    &__catalogue-item {
+        @include flex (space-between);
+        margin-bottom: 30px;
+        color: $clr-primary;
+        font-size: $fs-15;
+
+        &:last-child {
+            margin-bottom: 15px;
+        }
+
+        span {
+            color: $clr-holder;
+        }
+    }
 }
 
 .categories__card-item {
