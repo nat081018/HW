@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Foxtar</title>
-  <!-- <link type="text/css" rel="stylesheet" href="jquery.pwstabs.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
   <link  type="text/css" rel="stylesheet" href="./css/main.css">
@@ -23,13 +22,15 @@
             </div>
             <div class="header__description-help-wrapper">
               <p class="header__description-text"><span>Need help?</span> Talk to an expert: <a href="tel:61383766284">+61 3 8376 6284</a></p>
-              <a href="#" class="header__description-icon-wrapper">
-                <span class="header__description-purchases">8</span>
-                <i class="fas fa-shopping-cart header__description-icon"></i>
-              </a>
-              <div class="header__description-btn-wrapper">
-                <button class="btn">Login</button>
-                <button class="btn btn--warning btn--marg-left">Register</button>
+              <div class="header__description-overlay">
+                <a href="#" class="header__description-icon-wrapper">
+                  <span class="header__description-purchases">8</span>
+                  <i class="fas fa-shopping-cart header__description-icon"></i>
+                </a>
+                <div class="header__description-btn-wrapper">
+                  <button class="btn" data-popup="login">Login</button>
+                  <button class="btn btn--warning btn--marg-left">Register</button>
+                </div>
               </div>
             </div>
         </div>
@@ -38,7 +39,7 @@
     <div class="header__menu">
       <div class="container">
         <nav class="header__nav">
-          <ul class="header__nav-list">
+          <ul class="header__nav-list" id="menu">
             <li class="header__nav-list-item">
               <a href="" class="header__nav-link">Home</a>
             </li>
@@ -86,9 +87,7 @@
           <div class="search">
             <form>
               <input class="banner__input" type="text" placeholder="Search Your Keywords . . .">
-              <button class="search_btn" type="submit">
-                  <span class="fa fa-search search_icon"></span>
-              </button>
+              <button class="search_btn" type="submit"><img src="./img/search-icon.png" alt="search"></button>
             </form>
           </div>  
         </div>
@@ -1939,21 +1938,52 @@
     <p class="footer__license text--center">© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
   </footer>
 
+  <div class="pop-up__overlay" id="login">
+    <aside class="pop-up">
+      <button class="pop-up__close">
+        <i class="fas fa-times"></i>
+      </button>
+  
+      <div class="pop-up__content">
+        <h2 class="pop-up__title text--center">Login</h2>
+  
+        <form action="">
+          <label for="login-name" class="pop-up__label">
+            <i class="fas fa-user-alt"></i>
+            <input type="text" name="login-name" id="login-name" class="pop-up__input" placeholder="Name">
+          </label>
+          <label for="login-pass" class="pop-up__label">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="login-name" id="login-pass" class="pop-up__input" placeholder="Password">
+          </label>
+  
+          <div class="pop-up__actions-wrapper">
+            <button type="submit" class="pop-up__btn-login">Submit</button>
+            <a href="#" class="pop-up__new-account">
+              <i class="far fa-edit"></i>
+              Create An Account?
+            </a>
+          </div>
+          <a href="#" class="pop-up__lost-pass">Lost Password?</a>
+        </form>
+      </div>
+    </aside>
+  </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </script>
+<script
+src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
 <script src="./js/bundle.js"></script>
-<!-- <script>
-  $ ('.range').ionRangeSlider({
-    type: "double",
-    min: 0,
-    max: 1000,
-    from: 200,
-    to: 500,
-    grid: true
-});
-</script>
 <script>
-  $('#menu').slicknav();
-</script>  -->
+  $('#menu').slicknav({
+    label: "",
+    duration: 1000,
+    prependTo: '.header__menu',
+    easingOpen: "easeOutBounce"
+  });
+</script> 
 </body>
 </html>
