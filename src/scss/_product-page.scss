@@ -38,7 +38,19 @@ $regent-gray:#78909c;
 }
 
 .product-page__left {
-    width: 270px; 
+    width: 270px;
+    
+    @media (min-width:480) {
+        display: none;
+    }
+
+    @media (min-width:768) {
+        display: none;
+    }
+
+    @media (min-width:991) {
+        display: none;
+    }
 }
 
 .product-page__categories {
