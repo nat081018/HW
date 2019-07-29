@@ -1,0 +1,36 @@
+.switcher {
+    $root: ".switcher";
+        
+    @include flex (flex-start, center);
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+        &:checked {
+            & + #{$root}__label {
+                color: $clr-note;
+            }
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+        font-size: $fs-16;
+        color: #90a4ae;
+        transition: color .2s linear;
+
+        &:hover {
+            color: $clr-note;
+        }
+    }
+
+    &__item {
+        margin-right: 11px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

@@ -113,7 +113,7 @@
             <div class="categories__card">
               <h3 class="categories__card-title">Categories</h3>
               <ul class="categories__catalogue">
-                <li class="categories__catalogue-item">
+                <li class="categories__catalogue-item accordion">
                   <div>
                     <i class="fas fa-chevron-right pointer-icon"></i>
                     WordPress 
@@ -305,25 +305,42 @@
           </aside>
 
           <div class="services">
-            <div class="services__filter">
-              <div class="services__filter-wrapper">
-                <button class="services__filter-btn">
-                  <i class="fas fa-sort-amount-down"></i>
-                </button>
-                <p class="services__filter-text">Sort by: New Items</p>
-                <button class="services__filter-btn">
-                  <i class="fas fa-sort services--icon"></i>
-                </button>
+
+            <div class="services__filter filter">
+              <div class="filter__sort dropdown">
+                <header class="dropdown__header">
+                  <div class="dropdown__toggle">
+                    <i class="fas fa-sort-amount-down"></i>
+                    Sort by:
+                    <span class="dropdown__current">New Items</span>
+                    <i class="fas fa-sort"></i>
+                  </div>
+                </header>
+
+                <ul class="dropdown__list">
+                    <li class="dropdown__item">New Items</li>
+                    <li class="dropdown__item">Old Items</li>
+                    <li class="dropdown__item">Price: Low to High</li>
+                    <li class="dropdown__item">Price: High to Low</li>
+                  </ul>
               </div>
-              <div class="services__filter-wrapper">
-                <button class="services__filter-switch">
-                  <i class="fab fa-microsoft"></i>
-                </button>
-                <button class="services__filter-switch">
-                  <i class="fas fa-th-list"></i>
-                </button>
+
+              <div class="filter__view-switcher switcher">
+                <div class="switcher__item">
+                  <input class="switcher__input" checked="checked" type="radio" name="view" id="gallery">
+                  <label class="switcher__label" for="gallery">
+                    <i class="fab fa-microsoft"></i>
+                  </label>
+                </div>
+                <div class="switcher__item">
+                  <input class="switcher__input" type="radio" name="view" id="list">
+                  <label class="switcher__label" for="list">
+                    <i class="fas fa-th-list"></i>
+                  </label>
+                </div>
               </div>
             </div>
+
             <div class="services__tab-wrapper">
 
               <div class="tabs__card card services__card-item">
@@ -1087,7 +1104,40 @@ crossorigin="anonymous"></script>
     prependTo: '.header__menu',
     easingOpen: "easeOutBounce"
   });
-  $('input, select').styler();
+
+  $('select').styler();
+
+  $('.dropdown__toggle').on('click', toggleDropdown);
+  $('.dropdown__item').on('click', handlerDropdown);
+
+  function toggleDropdown() {
+    $('.dropdown__list').slideToggle();
+  }
+
+  function closeDropdown() {
+    $('.dropdown__list').slideUp();
+  }
+
+  function handlerDropdown() {
+    var currentText = $(this).text();
+    
+    $('.dropdown__current').text(currentText);
+    closeDropdown();
+  };
+
+  $('.accordion__header').on('click', handlerAccordion);
+
+  function handlerAccordion() {
+    var currentAccordionContent = $(this).closest('.accordion').find('.accordion__body');
+
+    $('.accordion__body').slideUp();
+    
+    if (currentAccordionContent.css('display') === 'block') {
+      currentAccordionContent.slideUp();
+    } else {
+      currentAccordionContent.slideDown();
+    }
+  };
 </script> 
 </body>
 </html>

@@ -1,0 +1,46 @@
+.dropdown {
+    position: relative;
+
+    &__toggle {
+
+        color: $clr-additional;
+        line-height: 20px;
+        cursor: pointer;
+
+        i {
+            &:first-of-type {
+                color: #455a64;
+                margin-right: 10px;
+            }
+
+            &:last-of-type {
+                font-size: $fs-18;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: $bg-extra;
+        padding-top: 10px;
+        width: 100%;
+        display: none;
+    }
+
+    &__item {
+        line-height: 40px;
+        color: $clr-additional;
+        border-top: 1px solid #eee;
+        cursor: pointer;
+        padding: 0 10px;
+
+        &:hover {
+            background-color: $bg-note;
+            color: $clr-extra;
+        }
+    }
+
+}
