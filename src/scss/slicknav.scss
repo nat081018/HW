@@ -1,2 +1,17 @@
 @import 'core';
 @import 'theme';
+
+$nav-item-clr: #b0bec5;
+
+.slicknav_menu {
+    background-color: transparent;
+
+    li {
+        font-size: $fs-18;
+        
+        a {
+            color: $nav-item-clr;
+            outline: none;
+        }
+    }
+}

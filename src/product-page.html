@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Foxtar</title>
-  <!-- <link type="text/css" rel="stylesheet" href="jquery.pwstabs.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css">
   <link  type="text/css" rel="stylesheet" href="./css/main.css">
@@ -23,6 +22,7 @@
             </div>
             <div class="header__description-help-wrapper">
               <p class="header__description-text"><span>Need help?</span> Talk to an expert: <a href="tel:61383766284">+61 3 8376 6284</a></p>
+<<<<<<< HEAD
               <a href="#" class="header__description-icon-wrapper">
                 <span class="header__description-purchases">8</span>
                 <i class="fas fa-shopping-cart header__description-icon"></i>
@@ -30,6 +30,17 @@
               <div class="header__description-btn-wrapper">
                 <button class="btn">Login</button>
                 <button class="btn btn--warning btn--marg-left">Register</button>
+=======
+              <div class="header__description-overlay">
+                <a href="#" class="header__description-icon-wrapper">
+                  <span class="header__description-purchases">8</span>
+                  <i class="fas fa-shopping-cart header__description-icon"></i>
+                </a>
+                <div class="header__description-btn-wrapper">
+                  <button class="btn">Login</button>
+                  <button class="btn btn--warning btn--marg-left">Register</button>
+                </div>
+>>>>>>> 3f9fff352506f305c53f6ff8d4c5675b4a833e4f
               </div>
             </div>
         </div>
@@ -38,7 +49,11 @@
     <div class="header__menu">
       <div class="container">
         <nav class="header__nav">
+<<<<<<< HEAD
           <ul class="header__nav-list">
+=======
+          <ul class="header__nav-list" id="menu">
+>>>>>>> 3f9fff352506f305c53f6ff8d4c5675b4a833e4f
             <li class="header__nav-list-item">
               <a href="" class="header__nav-link">Home</a>
             </li>
@@ -76,6 +91,7 @@
   </header>
 
   <main>
+<<<<<<< HEAD
     <section class="banner">
       <div class="container"> 
         <h1 class="title title--banner">Welcome To Foxtar Market Place!</h1> 
@@ -89,11 +105,24 @@
               <button class="search_btn" type="submit">
                   <span class="fa fa-search search_icon"></span>
               </button>
+=======
+    <section class="banner banner--small">
+      <div class="container"> 
+        <div class="banner__text banner__text--product">
+            <p>Premium WordPress Themes, Web Templates and Many More ...</p>
+        </div>
+        <div class="search_position">
+          <div class="search search--shadow search--product">
+            <form>
+              <input class="banner__input banner__input--product" type="text" placeholder="Search Your Keywords . . .">
+              <button class="search_btn" type="submit"><img src="./img/search-icon.png" alt="search"></button>
+>>>>>>> 3f9fff352506f305c53f6ff8d4c5675b4a833e4f
             </form>
           </div>  
         </div>
       </div>
     </section>
+<<<<<<< HEAD
     <section class="product-page">
       <div class="container">
       <h3 class="product-page-title"> <span class="product-page-word">Home  -</span> Product Page</h3>
@@ -1155,6 +1184,862 @@
             <a href="#" class="main__btn">2</a>
             <a href="#" class="main__btn">3</a>
             <a href="#" class="main__btn">4</a>
+=======
+
+    <section class="product-page">
+      <div class="container">
+        <div class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="./index.html" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <span class="breadcrumbs__link">Product Page</span>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="product-page__layout">
+          <aside class="categories">
+            <div class="categories__card">
+              <h3 class="categories__card-title">Categories</h3>
+              <ul class="categories__catalogue">
+                <li class="categories__catalogue-item">
+                  <div>
+                    <i class="fas fa-chevron-right pointer-icon"></i>
+                    WordPress 
+                  </div>
+                  <span>(150)</span>
+                </li>
+                <li class="categories__catalogue-item">
+                  <div>
+                    <i class="fas fa-chevron-right pointer-icon"></i>
+                    Joomla
+                  </div>
+                  <span>(100)</span>
+                </li>
+                <li class="categories__catalogue-item">
+                  <div>
+                    <i class="fas fa-chevron-right pointer-icon"></i>
+                    PSD
+                  </div>
+                  <span>(50)</span>
+                </li>
+                <li class="categories__catalogue-item">
+                  <div>
+                    <i class="fas fa-chevron-right pointer-icon"></i>
+                    Plugins
+                  </div>
+                  <span>(60)</span>
+                </li>
+                <li class="categories__catalogue-item">
+                  <div>
+                    <i class="fas fa-chevron-right pointer-icon"></i>
+                    Components 
+                  </div>
+                  <span>(40)</span>
+                </li>
+              </ul>
+            </div>
+            <div class="categories__card">
+              <h3 class="categories__card-title">Price Range</h3>
+              <form action="">
+                <input type="text" class="categories__range-slider" name="price"/>
+                <button class="categories__btn" type="submit"><i class="fas fa-search categories__search-icon"></i>Search</button>
+              </form>
+            </div>
+            <div class="categories__card">
+              <h3 class="categories__card-title">Top 10 Sellers</h3>
+              <div class="tabs__card card categories__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>Site Template</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$40</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>PsdBosS</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card categories__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a href="#" class="description__common">
+                        <p>Resposive APP</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>Site Template</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$20</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Mikc Art</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card categories__card-item categories__card-item--border">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>Site Template</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$12</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Greenta9</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <button class="categories__btn">View All</button>
+            </div>
+          </aside>
+
+          <div class="services">
+            <div class="services__filter">
+              <div class="services__filter-wrapper">
+                <button class="services__filter-btn">
+                  <i class="fas fa-sort-amount-down"></i>
+                </button>
+                <p class="services__filter-text">Sort by: New Items</p>
+                <button class="services__filter-btn">
+                  <i class="fas fa-sort services--icon"></i>
+                </button>
+              </div>
+              <div class="services__filter-wrapper">
+                <button class="services__filter-switch">
+                  <i class="fab fa-microsoft"></i>
+                </button>
+                <button class="services__filter-switch">
+                  <i class="fas fa-th-list"></i>
+                </button>
+              </div>
+            </div>
+            <div class="services__tab-wrapper">
+
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="tabs__card card services__card-item">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                  </div>
+                  <div class="card__main">
+                    <div class="description">
+                      <a  href="#" class="description__common">
+                        <p>The Post Grid Pro</p>
+                      </a>
+                      <div class="description__technology">
+                        <p>WordPress Plugin</p>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <p>$19</p>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <div class="icon__text-wrapper">
+                      <div class="footer__icon-wrapper">
+                        <div class="footer__icon"></div>
+                      </div>
+                      <div class="footer__text">
+                        <p>Raklouse</p>
+                      </div>
+                    </div>
+                    <div class="fooler-stars__wrapper">
+                      <ul class="stars">
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars"><span class="fas fa-star"></span>
+                        </li>
+                        <li class="footer__stars">
+                          <span class="fas fa-star"></span>
+                        </li>
+                        <li class="mark">
+                          <span class="stars__mark">5</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+
+            </div>
+
+            <div class="services__pages">
+              <ul class="services__pages-list">
+                <li class="services__pages-item">
+                  <a href="#" class="services__pages-link">1</a>
+                </li>
+                <li class="services__pages-item">
+                  <a href="#" class="services__pages-link">2</a>
+                </li>
+                <li class="services__pages-item">
+                  <a href="#" class="services__pages-link">3</a>
+                </li>
+                <li class="services__pages-item">
+                  <a href="#" class="services__pages-link">4</a>
+                </li>
+              </ul>
+            </div>
+
+>>>>>>> 3f9fff352506f305c53f6ff8d4c5675b4a833e4f
           </div>
         </div>
       </div>
@@ -1186,6 +2071,7 @@
             <h4 class="footer__card-title">Join Our Community</h4>
             <ul class="footer__menu">
               <li class="footer__menu-item">
+<<<<<<< HEAD
                 <i class="fas fa-chevron-right footer__menu-icon"></i>
                 <a href="./index.html" class="footer__menu-link">Home</a>
               </li>
@@ -1203,6 +2089,25 @@
               </li>
               <li class="footer__menu-item">
                 <i class="fas fa-chevron-right footer__menu-icon"></i>
+=======
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="./index.html" class="footer__menu-link">Home</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="#" class="footer__menu-link">Forums</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="#" class="footer__menu-link">Become an Author</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="#" class="footer__menu-link">Community Meetups</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+>>>>>>> 3f9fff352506f305c53f6ff8d4c5675b4a833e4f
                 <a href="#" class="footer__menu-link">Become an Affiliate</a>
               </li>
             </ul>
@@ -1213,6 +2118,7 @@
             <h4 class="footer__card-title">Need Help?</h4>
             <ul class="footer__menu">
               <li class="footer__menu-item">
+<<<<<<< HEAD
                 <i class="fas fa-chevron-right footer__menu-icon"></i>
                 <a href="#" class="footer__menu-link">Help Center</a>
               </li>
@@ -1230,6 +2136,25 @@
               </li>
               <li class="footer__menu-item">
                 <i class="fas fa-chevron-right footer__menu-icon"></i>
+=======
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="#" class="footer__menu-link">Help Center</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="#" class="footer__menu-link">Foxtar Market Terms</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="#" class="footer__menu-link">Author Terms</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+                <a href="#" class="footer__menu-link">Foxtar Licenses</a>
+              </li>
+              <li class="footer__menu-item">
+                <i class="fas fa-chevron-right pointer-icon"></i>
+>>>>>>> 3f9fff352506f305c53f6ff8d4c5675b4a833e4f
                 <a href="#" class="footer__menu-link">Contact Us</a>
               </li>
             </ul>
@@ -1270,6 +2195,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 </script>
 <script
+<<<<<<< HEAD
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
   crossorigin="anonymous"></script>
@@ -1310,5 +2236,35 @@ $('.dropdown__toggle').on('click', toggleDropdown);
   $('#menu').slicknav();
 </script>
 
+=======
+src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
+<script src="./js/bundle.js"></script>
+<script>
+  $ ('.categories__range-slider').ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 1000,
+    step: 10,
+    from: 0,
+    to: 600,
+    grid: false,
+    prefix: "$",
+    skin: "round",
+    hide_min_max: true
+});
+</script>
+<script>
+  $('#menu').slicknav({
+    label: "",
+    duration: 1000,
+    prependTo: '.header__menu',
+    easingOpen: "easeOutBounce"
+  });
+  $('input, select').styler();
+</script> 
+>>>>>>> 3f9fff352506f305c53f6ff8d4c5675b4a833e4f
 </body>
 </html>

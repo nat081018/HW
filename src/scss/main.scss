@@ -2,6 +2,7 @@
 @import "./_reset.scss";
 @import "./abstracts/variables";
 @import "./_default-classes";
+@import "./abstracts/mixins";
 @import "./_slider";
 @import "./slicknav.scss";
 @import "./abstracts/mixins";
@@ -15,4 +16,13 @@
 @import "./product-page";
 @import "./dropdown";
 @import "./switcher.scss";
+@import "./breadcrumbs";
+@import "./review";
+@import "./details";
+@import "./formstyler";
+@import "./price-select";
+@import "./services";
+@import "./categories";
+@import "./price-slider";
+@import "./pop-up";
 @import "./footer";
