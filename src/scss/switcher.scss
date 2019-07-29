@@ -1,0 +1,42 @@
+.switcher {
+    $root: ".switcher"
+    display: flex;
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+        &:checked {
+            & + #{$root}__label {
+                color: $green;
+            }
+        }
+
+    }
+
+    &__lable {
+        cursor: pointer;
+        font-size: $fs-16;
+        color: #90a4ae;
+        transition: color .2s linear;
+
+        &__:hover {
+            color: $clr-note;
+        }
+      
+
+        &__item {
+            margin-right: 11px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+        }
+
+
+      
+
+    }
+}

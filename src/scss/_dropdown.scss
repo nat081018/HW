@@ -1,0 +1,47 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+} 
+
+.dropdown {
+    position: relative;
+    &__toggle {
+        line-height: 12px;
+        color: #707070;
+
+        i {
+
+            
+            :first-of-type {
+                margin-right: 12px;
+                color: #455a64;
+            }
+            &:last-of-type {
+                margin-left: 12px;
+                font-size: $fs-18;
+               
+            }
+        }
+
+    }
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #fff;
+        padding: 10px;
+        width: 100%;
+        display: none;
+        
+
+    }
+  
+    &__item {
+        line-height: 40px;
+        color: #707070;
+        border-top: 1px solid #455a64;
+    }
+    
+}

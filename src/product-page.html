@@ -344,7 +344,45 @@
           </div>
         </div> 
         <div class="product-page__main">
-          <div class="main__sort"></div>
+          <div class="main__sort">
+          </div>
+
+          <div class="product-page__main-filter filter">
+              <div class="filter__sotr dropdown">
+                <header class="dropdown__header">
+                  
+                  <div class="dropdown__toggle">
+                      <i class="fas fa-sort-amount-down"></i>
+                      Sort by:
+                      <span class="dropdown__current">New Items</span>
+                      <i class="fas fa-sort"></i>
+                  </div>
+                  
+
+
+                </header>
+                  <ui class="dropdown__list">
+                    <div class="dropdown__item">New Items</div>
+                    <div class="dropdown__item">OLd Items</div>
+                    <div class="dropdown__item">Price High to Low</div>
+                    <div class="dropdown__item">Price High to Down</div>
+                  </ui>
+              </div>
+              <div class="filter__view-switch switcher" id="gallery">
+                <div class="switcher__item">
+                  <input type="radio" name="square" checked="checkid" id="gallery"> 
+                  <label class="switcher__label" for="">
+                    <i class=" fab fa-microsoft"></i>
+                  </label>
+                </div>
+                <div class="switcher__item">
+                    <input type="radio" name="square" id="gallery" > 
+                    <label class="switcher__label" for="">
+                      <i class=" fab fa-th-list"></i>
+                    </label>
+                </div>
+              </div>
+            </div>
           <div class="main__wrapper">
               <div class="tabs__card card card--main ">
                   <div class="card__wrapper">
@@ -1248,9 +1286,29 @@
     to: 600,
     grid: false
 });
+
+$('.dropdown__toggle').on('click', toggleDropdown);
+  $('.dropdown__item').on('click', handlerDropdown);
+
+  function toggleDropdown() {
+    $('.dropdown__list').slideToggle();
+  }
+
+  function closeDropdown() {
+    $('.dropdown__list').slideUp();
+  }
+
+  function handlerDropdown() {
+    var currentText = $(this).text();
+    
+    $('.dropdown__current').text(currentText);
+    closeDropdown();
+  }
 </script>
+
 <script>
   $('#menu').slicknav();
-</script>  
+</script>
+
 </body>
 </html>
