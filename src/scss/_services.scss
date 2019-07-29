@@ -124,6 +124,39 @@ $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
         font-size: $fs-18;
         color: $clr-additional;
     }
+
+    &__card--gallery {
+        width: 100%;
+
+        .card {
+
+            &__wrapper {
+                display: flex;
+            }
+
+            &__header {
+                display: inline-block;
+                height: 200px;
+                width: 300px;
+            }
+
+            &__footer {
+                border-top: none;
+                border-left: 1px solid #eee;
+                flex-direction: column;
+                justify-content: center;
+
+                .icon__text-wrapper {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__main {
+                width: 425px;
+                @include flex (space-between, center);
+            }
+        }
+    }
 }
 
 .services__pages {

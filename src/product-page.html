@@ -327,13 +327,13 @@
 
               <div class="filter__view-switcher switcher">
                 <div class="switcher__item">
-                  <input class="switcher__input" checked="checked" type="radio" name="view" id="gallery">
+                  <input class="switcher__input gallery--js" checked="checked" type="radio" name="view" id="gallery">
                   <label class="switcher__label" for="gallery">
                     <i class="fab fa-microsoft"></i>
                   </label>
                 </div>
                 <div class="switcher__item">
-                  <input class="switcher__input" type="radio" name="view" id="list">
+                  <input class="switcher__input list--js" type="radio" name="view" id="list">
                   <label class="switcher__label" for="list">
                     <i class="fas fa-th-list"></i>
                   </label>
@@ -1138,6 +1138,18 @@ crossorigin="anonymous"></script>
       currentAccordionContent.slideDown();
     }
   };
+
+  $('.list--js').change(function(){
+    if($(this).is(':checked')) {
+      $('.services__card-item').addClass('services__card--gallery');
+    }
+  });
+
+  $('.gallery--js').change(function(){
+    if($(this).is(':checked')) {
+      $('.services__card-item').removeClass('services__card--gallery');
+    }
+  });
 </script> 
 </body>
 </html>
