@@ -61,7 +61,7 @@ $box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
     &--product {
       width: $search-width-mobile;
 
-      @media (min-width: 600px) {
+      @media (min-width: 500px) {
         width: $search-width-medium;
       }
 
@@ -80,7 +80,11 @@ $box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
     width: $input-width;
 
     &--product {
-      line-height: 48px;
+      line-height: 38px;
+
+      @media (min-width: 500px) {
+        line-height: 48px;
+      }
 
       @media (min-width: 900px) {
         line-height: 57px;

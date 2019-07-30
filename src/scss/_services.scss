@@ -4,6 +4,11 @@ $services-photo-height: 180px;
 $services-icon-clr: #455a64;
 $services-link-height: 38px;
 $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+$header-list-height: 200px;
+$header-list-width: 300px;
+$footer-list-border: 1px solid #eee;
+$main-list-width: 425px;
+$card-list-max-width: 900px;
 
 .product-page {
     background-color: $bg-secondary;
@@ -16,12 +21,12 @@ $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
     .breadcrumbs {
         display: none;
 
-        @media (min-width: 1300px) {
+        @media (min-width: 1200px) {
             display: block;
         }
     }
 
-    @media (min-width: 1300px) {
+    @media (min-width: 1200px) {
         padding-top: 0;
     }
 }
@@ -30,7 +35,7 @@ $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
     padding: 0 0 50px;
     max-width: 100%;
 
-    @media (min-width: 1300px) {
+    @media (min-width: 1200px) {
         padding: 0 0 110px 30px;
         max-width: $services-width;
     }
@@ -127,6 +132,8 @@ $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
 
     &__card--gallery {
         width: 100%;
+        max-width: $card-list-max-width;
+        margin: 0 auto;
 
         .card {
 
@@ -135,24 +142,42 @@ $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
             }
 
             &__header {
-                display: inline-block;
-                height: 200px;
-                width: 300px;
+                display: none;
+                height: $header-list-height;
+                width: $header-list-width;
+
+                @media (min-width: 425px) {
+                    display: inline-block;
+                }
             }
 
             &__footer {
+                display: none;
                 border-top: none;
-                border-left: 1px solid #eee;
+                border-left: $footer-list-border;
                 flex-direction: column;
                 justify-content: center;
 
+                @media (min-width: 575px) {
+                    display: flex;
+                }
+
                 .icon__text-wrapper {
                     margin-bottom: 10px;
+                    margin-left: -5px;
+                }
+
+                .mark {
+                    display: none;
+
+                    @media (min-width: 900px) {
+                        display: block;
+                    }
                 }
             }
 
             &__main {
-                width: 425px;
+                width: $main-list-width;
                 @include flex (space-between, center);
             }
         }
@@ -163,7 +188,7 @@ $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
     margin-top: 48px;
     @include flex (center);
 
-    @media (min-width: 1300px) {
+    @media (min-width: 1200px) {
         display: block;
     }
     
@@ -198,4 +223,3 @@ $services-link-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
         }
     }
 }
-

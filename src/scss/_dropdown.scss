@@ -1,3 +1,6 @@
+$toggle-icon-clr: #455a64;
+$dropdown-item-border: 1px solid #eee;
+
 .dropdown {
     position: relative;
 
@@ -9,7 +12,7 @@
 
         i {
             &:first-of-type {
-                color: #455a64;
+                color: $toggle-icon-clr;
                 margin-right: 10px;
             }
 
@@ -33,7 +36,7 @@
     &__item {
         line-height: 40px;
         color: $clr-additional;
-        border-top: 1px solid #eee;
+        border-top: $dropdown-item-border;
         cursor: pointer;
         padding: 0 10px;
 

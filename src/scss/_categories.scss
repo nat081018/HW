@@ -1,8 +1,14 @@
 $categories-card-border: 1px solid #dde3e8;
 $categories-btn-bg: 205px;
+$card-header-height: 120px;
 
 .categories {
+    display: none;
     width: $aside-width;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
 
     &__card {
         padding: 5px 30px 30px;
@@ -41,7 +47,6 @@ $categories-btn-bg: 205px;
     }
 
     &__catalogue-item {
-        @include flex (space-between);
         margin-bottom: 30px;
         color: $clr-primary;
         font-size: $fs-15;
@@ -70,7 +75,7 @@ $categories-btn-bg: 205px;
 
 
     .card__header {
-        height: 120px;
+        height: $card-header-height;
     }
 
     .card__main {
