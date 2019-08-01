@@ -101,7 +101,6 @@ $slick-dot-color-active: green;
 .slick-arrow.slick-hidden {
     display: none;
 }
-// ///////////////
 
 .slick-dots {
     margin-top: 65px;
@@ -142,7 +141,6 @@ $slick-dot-color-active: green;
 
 .slider__item  .card {
     width: 100%;
-
 }
 
 .tabs {
@@ -158,8 +156,6 @@ $slick-dot-color-active: green;
     }
     
 }
-
-
 
 @media(min-width:480px) {
 
@@ -178,15 +174,13 @@ $slick-dot-color-active: green;
     .tabs__menu-item {
         display: flex;
         justify-content: center;
-        margin: 15px 0;
-       
+        margin: 15px 0;  
     }
 
     .tabs__menu-btn  {
         width: 300px;
         padding: 15px 0;
     }
-
 }
 
 
@@ -196,15 +190,9 @@ $slick-dot-color-active: green;
         font-size: $fs-20;
     }
 
-    // .tabs__menu {
-    //     flex-wrap: wrap;
-    // }
-
     .card {
         width: 50%;
     }
-
-
 }
 
 @media(min-width:991px) {

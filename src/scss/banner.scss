@@ -1,82 +1,50 @@
-$sertion-height: 530px;
+$section-height: 530px;
 $search-width: 93%;
 $input-width: 82%;
 $search-btn-width: 10%;
 
 .banner {
-    height: $sertion-height;
+    height: $section-height;
     background-image: url(../img/banner.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center; 
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+
+    &__text {
+      text-align: center;
+      font-family: $ff-roboto-bold;
+      font-size: $fs-20;
+      color: $clr-extra;
+      margin: 35px 0 55px;
+
+      @media (min-width: 768px) {
+        font-size: $fs-16;
+      }
+    
+      @media (min-width: 480px) {
+        font-size: $fs-14;
+      }
+    
+    } 
+
+    &__input {
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      padding-left: 23px;
+      line-height: 57px;
+      width: $input-width;
+    }
   }
-  
+
   .title--banner {
     font-family: $ff-roboto-bold;
     font-size: $fs-48;
     color: $clr-extra;
     text-align: center;
-
-  
-  }
-  
-  .banner__text {
-    text-align: center;
-    font-family: $ff-roboto-bold;
-    font-size: $fs-20;
-    color: $clr-extra;
-    margin: 35px 0 55px;
-
-  
-  }
-
-  .search_position {
-    display: flex;
-    justify-content:center;
-  }
-  
-  .search {
-    font-family:$ff-raleway-bold;
-    color: $clr-holder-extra;
-    border-radius: 5px;
-    width: $search-width;
-    background-color: #fff;
-    box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
-  }
-  
-  .banner__input {
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    padding-left: 23px;
-    line-height: 57px;
-    width: $input-width;
-  }
-  
-  .search_btn {
-    font-family: $ff-roboto-light;
-    font-size: $fs-20;
-    line-height: 57px;
-    width: $search-btn-width;
-    background-color: transparent;
-  }
-  
-  .search_icon {
-    font-size: $fs-20;
-
-    &::before {
-      cursor: pointer;
-    }
-
-    &:hover {
-      color: $clr-note;
-    }
-  }
-
-  .title--banner {
 
     @media (min-width: 768px) {
       font-size: $fs-24;
@@ -87,18 +55,44 @@ $search-btn-width: 10%;
     }
 
   }
+  
+  .search {
+    font-family:$ff-raleway-bold;
+    color: $clr-holder-extra;
+    border-radius: 5px;
+    width: $search-width;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
 
-  .banner__text {
+    &__position {
+      display: flex;
+      justify-content:center;
+    }
 
-    @media (min-width: 768px) {
-      font-size: $fs-16;
+    &__btn {
+      font-family: $ff-roboto-light;
+      font-size: $fs-20;
+      line-height: 57px;
+      width: $search-btn-width;
+      background-color: transparent;
+    }
+
+    .search__icon {
+      font-size: $fs-20;
+  
+      &::before {
+        cursor: pointer;
+      }
+  
+      &:hover {
+        color: $clr-note;
+      }
+    }
   }
+  
+  
 
-  @media (min-width: 480px) {
-    font-size: $fs-15;
-  }
 
-}
 
   
   
