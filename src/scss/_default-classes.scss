@@ -30,7 +30,7 @@ body {
 .title-extra {
     color: $clr-extra;
     font-family: $ff-roboto-reg;
-    font-size: 24px;
+    font-size: $fs-24;
     font-weight: 500;
     line-height: 60px;
     text-transform: capitalize;
@@ -44,3 +44,7 @@ body {
     text-align: right;
 }
 
+.pointer-icon {
+    color: $clr-note;
+    margin-right: 8px;
+}

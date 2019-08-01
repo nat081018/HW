@@ -7,15 +7,35 @@ $icon-wrapper-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
 .header__description {
     background-color: $bg-extra;
     padding: $section-space-secondary;
+
+    &-logo-wrapper {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    @media (min-width: 880px) {
+
+        &-logo-wrapper {
+            margin-bottom: 0;
+            text-align: left;
+        }
+ 
+    }
 }
 
 .header__description-layout {
-    @include flex (space-between, center);
+
+    @media (min-width: 750px) {
+        @include flex (space-between, center);
+    }
 }
 
 .header__description-text {
-    font-size: $fs-15;
+    font-size: $fs-14;
     color: $clr-secondary;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.4em;
 
     span {
         color: $clr-warning;
@@ -28,6 +48,17 @@ $icon-wrapper-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
         &:hover {
             color: $clr-note;
         }
+    }
+
+    @media (min-width: 564px) and (max-width: 880px) {
+        padding-top: 15px;
+    }
+
+    @media (min-width: 880px) {
+        font-size: $fs-15;
+        margin-bottom: 0;
+        text-align: left;
+        line-height: 1em;
     }
 }
 
@@ -74,7 +105,15 @@ $icon-wrapper-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 .header__menu {
     background-color: $bg-primary;
-    padding: 20px 0;
+    padding: 10px 0;
+
+    @media (min-width: 880px) {
+        padding: 20px 0;
+    }
+}
+
+.header__description-overlay {
+    @include flex (center);
 }
 
 .header__nav-list {
@@ -105,4 +144,18 @@ $icon-wrapper-hover-shadow: 0 0 10px rgba(0,0,0,0.5);
         text-decoration: underline;
         color: $clr-note;
     }
+}
+
+#menu {
+	display: none;
+}
+
+@media screen and (min-width: 880px) {
+	#menu {
+		display: flex;
+	}
+	
+	.slicknav_menu {
+		display: none;
+	}
 }

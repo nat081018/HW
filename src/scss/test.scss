@@ -1,0 +1,199 @@
+$overlay-bg: rgba(0, 0, 0, .6);
+$pop-up-shadow: 0 0 50px rgba(0, 0, 0, .7);
+$pop-up-ma-width: 730px;
+$pop-up-bg: #76ae36;
+$pop-up-login-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+
+.pop-up {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $bg-note;
+    padding: 20px;
+    max-width: $pop-up-ma-width;
+    width: 100%;
+
+    @media (min-width: 600px) {
+        padding: 40px 40px;
+    }
+
+    @media (min-width: 950px) {
+        padding: 90px 100px 110px;
+    }
+
+    @media (min-width: 1100px) {
+        padding: 90px 160px 110px;
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $overlay-bg;
+
+        &--is-opened {
+            display: block;
+
+            .pop-up {
+                animation: popup .6s ease-out forwards;
+
+                @keyframes popup {
+            
+                    0% {
+                        opacity: 0;
+                    }
+            
+                    70% {
+                        top: 65%;
+                        opacity: 0.6;
+                    }
+            
+                    100% {
+                        top: 50%;
+                        opacity: 1;
+                        box-shadow: $pop-up-shadow;
+                    }        
+                }
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: $clr-extra;
+        transition: transform .2s linear;
+        font-size: $fs-24;
+
+        @media (min-width: 1200px) {
+            font-size: $fs-18;
+        }
+
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &__title {
+        font-size: $fs-48;
+        color: $clr-extra;
+        text-transform: uppercase;
+        font-family: $ff-roboto-bold;
+        margin-bottom: 40px;
+    }
+
+    &__label {
+        @include flex;
+        align-items: center;
+        background-color: $pop-up-bg;
+        padding: 0 8px;
+        margin-bottom: 8px;
+
+        i {
+            width: 33px;
+            text-align: center;
+            color: $clr-extra;
+        }
+    }
+
+    &__input {
+        flex-grow: 2;
+        background-color: transparent;
+        border: none;
+        line-height: 50px;
+        color: $clr-extra;
+        font-size: $fs-18;
+
+        @media (min-width: 950px) {
+            line-height: 43px;
+            font-size: $fs-14;
+        }
+
+        &::placeholder {
+            color: $clr-extra;
+            transition: color .2s linear;
+        }
+
+        &:focus {
+
+            &::placeholder {
+                color: transparent;
+            }
+        }
+    }
+
+    &__actions-wrapper {
+        margin: 35px 0 35px;
+
+        @media (min-width: 460px) {
+            @include flex (space-between);
+        }
+
+        @media (min-width: 950px) {
+            margin: 20px 0 25px;
+        }
+
+    }
+
+    &__btn-login {
+        color: $clr-default;
+        font-family: $ff-roboto-bold;
+        font-size: $fs-18;
+        text-transform: uppercase;
+        background-color: $bg-extra;
+        line-height: 48px;
+        box-shadow: $pop-up-login-shadow;
+        padding: 0 45px;
+        transition: background-color .2s linear;
+
+        @media (min-width: 950px) {
+            font-size: $fs-14;
+        }
+
+        &:hover {
+            background-color: darken($bg-extra, 10);
+        }
+    }
+
+    &__new-account {
+        color: $clr-extra;
+        line-height: 50px;
+        background-color: $pop-up-bg;
+        padding: 0 32px;
+        flex-grow: 2;
+        text-align: center;
+        margin-left: 30px;
+        font-size: $fs-20;
+
+        @media (min-width: 950px) {
+            flex-grow: 1;
+            font-size: $fs-18;
+            padding: 0 20px;
+        }
+
+        @media (min-width: 1100px) {
+            padding: 0 32px;
+            margin-left: 0;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &__lost-pass {
+        color: $clr-extra;
+        font-size: $fs-20;
+
+        @media (min-width: 950px) {
+            font-size: $fs-18;
+        }
+
+    }
+}

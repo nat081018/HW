@@ -1,7 +1,10 @@
-$section-height: 530px;
-$search-width: 93%;
-$input-width: 82%;
-$search-btn-width: 10%;
+$sertion-height: 530px;
+$search-width: 670px;
+$search-width-mobile: 250px;
+$search-width-medium: 400px;
+$input-width: 100%;
+$input-box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
+$box-shadow-dark:  0 1px 10px rgba(100, 100, 100, 0.75);
 
 .banner {
     height: $section-height;
@@ -57,6 +60,7 @@ $search-btn-width: 10%;
   }
   
   .search {
+    position: relative;
     font-family:$ff-raleway-bold;
     color: $clr-holder-extra;
     border-radius: 5px;

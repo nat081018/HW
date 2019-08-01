@@ -1,3 +1,6 @@
+$btn-extra-width: 210px;
+$btn-extra-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+
 .btn {
     padding: 10px 20px;
     background-color: $bg-note;
@@ -45,4 +48,17 @@
         color: $clr-note;
         background-color: darken($bg-extra, 5);
     }
+}
+
+.btn-extra {
+    width: $btn-extra-width;
+    padding: 10px 0;
+    color: $clr-extra;
+    font-family: $ff-roboto-bold;
+    font-size: $fs-16;
+    line-height: 30px;
+    box-shadow: $btn-extra-shadow;
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: background-color .2s linear;
 }
